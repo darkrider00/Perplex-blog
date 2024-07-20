@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tier 0 on my Blog site</title><link>https://example.org/categories/tier-0/</link><description>Recent content in Tier 0 on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 15:45:10 +0530</lastBuildDate><atom:link href="https://example.org/categories/tier-0/index.xml" rel="self" type="application/rss+xml"/><item><title>Meow</title><link>https://example.org/hackthebox/starting-point/tier0/htb-meow/</link><pubDate>Fri, 19 Jul 2024 15:45:10 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-meow/</guid><description>What does the acronym VM stand for?
+Virtual machine
+What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It&amp;rsquo;s also known as a console or shell.
+Terminal
+What service do we use to form our VPN connection into HTB labs? Openvpn
+What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files now we got the flag
+TASK 1
+What does the 3-letter acronym FTP stand for?
+file transfer protocol
+Which port does the FTP service listen on usually?
+port 21
+What acronym is used for the secure version of FTP?
+SFTP
+What is the command we can use to send an ICMP echo request to test our connection to the target?
+Ping
+From your scans, what version is FTP running on the target?</description></item><item><title>Dancing</title><link>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</link><pubDate>Fri, 19 Jul 2024 15:37:07 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</guid><description>What does the 3-letter acronym SMB stand for?
+****** ******* ****k
+What port does SMB use to operate at?
+445
+What is the service name for port 445 that came up in our Nmap scan? microsoft-ds
+What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we can use with the smbclient utility to &amp;rsquo;list&amp;rsquo; the available shares on Dancing?
+-L
+How many shares are there on Dancing?
+4
+What is the name of the share we are able to access in the end with a blank password?</description></item></channel></rss>
