@@ -5,9 +5,9 @@ slug = "HTB-fawn"
 categories = ["hackthebox","FAWN","linux","very Easy","Starting point","tier 0"]
 +++
 
-![](https://drive.google.com/file/d/1zHM2JASyB0hUw2aEWUxADUCyiA54z7n1/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/cfdoazppb5mr38gqhru5l/Pasted-image-20240531151234.png?rlkey=r7q3m4k3iegui6hngp3uryenc&st=cqiyg7j2&dl=0)
 we got the ftp files
-![](https://drive.google.com/file/d/1_JXtIf_b0eGQ0lwxzp96Ks9TqdFX_H9a/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/gx7b0zsd52qwivikig3dv/Pasted-image-20240531151825.png?rlkey=oh0rlf13b82cljyxfaywxw85w&st=cz5do3vb&dl=0)
 
 now we got the flag 
 

@@ -5,7 +5,7 @@ slug = "HTB-Dancing"
 categories = ["hackthebox","Dancing","linux","very Easy","Starting point","tier 0"]
 +++
 
-![](https://drive.google.com/file/d/127FMKnS2I2n5hC_B054cpA9ZUY218qVr/view?usp=sharing)
+![dancing 1](https://dl.dropbox.com/scl/fi/aw4dimz4g712yzx4eru7y/Pasted-image-20240531160951.png?rlkey=zx4i61aol0yfiypt3ov489nvb&st=gv739cbf&dl=0)
 
 What does the 3-letter acronym SMB stand for?
 

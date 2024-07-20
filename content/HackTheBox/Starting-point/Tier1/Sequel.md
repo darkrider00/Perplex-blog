@@ -9,7 +9,7 @@ TASK 1
 
 During our scan, which port do we find serving MySQL?
 
-![](https://drive.google.com/file/d/12xVmrJUrgRjRNlQDS9Vlc_1xRX6wNO0q/view?usp=sharing)
+![sequel 1](https://dl.dropbox.com/scl/fi/t5duqtvdnpasbz5oqq2jp/Pasted-image-20240531104612.png?rlkey=fizgb9d6sotjzmor3soo63t4s&st=58ynm0gg&dl=0)
 
 on port 3306 mysql is running 
 
@@ -23,9 +23,9 @@ TASK 3
 
 When using the MySQL command line client, what switch do we need to use in order to specify a login username?
 
-![](https://drive.google.com/file/d/1vzAmlDcfz2xiF6QWlt03f4SGgG_tNuxW/view?usp=sharing)
+![sequel 2](hhttps://dl.dropbox.com/scl/fi/ulmglojj2n5zvh8b1fbu3/Pasted-image-20240531105451.png?rlkey=fcue3ns9p5um2ue2duuvxzcnn&st=j7tr55xd&dl=0)
 
-![](https://drive.google.com/file/d/1Rayf8x3pukO-z66KV81f61cFc0v1_Nwh/view?usp=sharing)
+![sequel 3](https://dl.dropbox.com/scl/fi/xpmy0mwzgvijc7ij3yvg9/Pasted-image-20240531105851.png?rlkey=48712sbyhda6nngbub85grlgl&st=ta9e6l23&dl=0)
 
 using the mysql manual page now we know that -h is used to connect to a host  and -u used to specify the username
 
@@ -49,13 +49,13 @@ TASK 7
 There are three databases in this MySQL instance that are common across all MySQL instances. What is the name of the fourth that's unique to this host?
 https://www.mysqltutorial.org/mysql-cheat-sheet/ refer to this for more detailed information
 
-![](https://drive.google.com/file/d/1_7TTz2460VohNgktz7AxX5qgZbop6CRs/view?usp=sharing)
+![sequel 4](https://dl.dropbox.com/scl/fi/v3n8esak1i5vrkln6hu47/Pasted-image-20240531123043.png?rlkey=zhwrwk6oac0kc8rdetu7ziih4&st=cq0ps4s6&dl=0)
 
 we are in now let's continue
-![](https://drive.google.com/file/d/1YOEersDEFCLJmihyzkKDnNr5tJyRUZJH/view?usp=sharing)
+![sequel 5](https://dl.dropbox.com/scl/fi/ntglot928koxpl1sqp5a8/Pasted-image-20240531123247.png?rlkey=bt70hvfe3ccmti524kk2j8puq&st=udyf179j&dl=0)
 
 the database unique to this host is htb let's use htb 
-![](https://drive.google.com/file/d/1n05cKRVejtVI4xp1OOVsA11r1VRLiGD0/view?usp=sharing)
+![sequel 6](https://dl.dropbox.com/scl/fi/ibhuunvmrfk09jqo9maux/Pasted-image-20240531123547.png?rlkey=tig2xku0smxzgbu23nph1vra7&st=32h2olwf&dl=0)
 
 Submit root flag
 Ans: 7b4bec00dla39************

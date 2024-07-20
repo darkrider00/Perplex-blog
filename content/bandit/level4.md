@@ -7,4 +7,4 @@ categories = ["bandit","level 4"]
 
 in this level there is a directory called inhere directory and there is a hidden file named .hidden file and can be seen using ls -la command
 
-![](https://drive.google.com/file/d/1cXCA5jRgOikkSKt_9LZMzpjN1fwHN5hw/view?usp=sharing)
+![hidden files](https://dl.dropbox.com/scl/fi/osxbjqu4g9j6pc5ry5kaa/Pasted-image-20240325163346.png?rlkey=aglxl2m4zn7ips834sjvdfd59&st=1b5drvq2&dl=0)

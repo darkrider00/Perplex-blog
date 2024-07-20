@@ -11,6 +11,6 @@ starting with level 0
 
 link : https://overthewire.org/wargames/bandit/
 
-![](https://drive.google.com/file/d/1IhVtyRL-Cek7PlXydQtCzDvJFsNQcU0H/view?usp=sharing)
+![Question](https://dl.dropbox.com/scl/fi/jslb288wss3ifwy2x59a0/Pasted-image-20240719132733.png?rlkey=z14owb5fv3oodzks5ru3ke0om&st=gewfb6zc&dl=0)
 
 In this the username and password is given as bandit 0 sing that I’ve logged in using SSH

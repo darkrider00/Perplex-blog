@@ -8,12 +8,12 @@ categories = ["hackthebox","Builder","linux","Medium"]
 
 I started with a Nmap scan to know things that are running on this machine 
 
-![](https://drive.google.com/file/d/1ExwBwOkvioJhfp7riwW-rGkczk-y15Am/view?usp=sharing)
+![builder 1](https://dl.dropbox.com/scl/fi/34b121k7ebbgk4injmte3/Pasted-image-20240331113546.png?rlkey=sj8xn7qoz0252pcx55d4ri0h0&st=94yli4f1&dl=0)
 from the above nmap scan we can see port 22 and 8080 is open 
 in port 8080 jetty is running (jetty is a java web server or a servelet container)
 https://en.wikipedia.org/wiki/Jetty_(web_server)
 
-![](https://drive.google.com/file/d/1Msv8XGbgUtk-BCw1NRHxcyVhVwRB-lPt/view?usp=sharing)
+![builder 2](https://dl.dropbox.com/scl/fi/qzn7ovjxvi2m4f7ckvqy6/Pasted-image-20240331113836.png?rlkey=wiyj2n6iktk9f4dyprurz38mo&st=96j6qqzs&dl=0)
 
 Here's the jenikins dashboard and jenikins version is 2.441
 
@@ -28,7 +28,7 @@ After a bit of searching i finally fund the vuln for 2.441 version
 https://github.com/vulhub/vulhub/tree/master/jenkins/CVE-2024-23897?source=post_page-----143ad7fde347--------------------------------
 
 
-![](https://drive.google.com/file/d/1wI-KBeAa-9tZ3rud42ldBx1B3gwfDoiK/view?usp=sharing)
+![builder 3](https://dl.dropbox.com/scl/fi/76505wvjdloqlmmh33wjj/Pasted-image-20240331114637.png?rlkey=4oayeovwlzjj2it0rph9mgg8s&st=udj0q62f&dl=0)
 
 from the above information, The `jenkins-cli.jar` file is a Java archive file that contains the Jenkins CLI utility. This utility allows users to interact with Jenkins from the command line or from scripts.
 
@@ -52,7 +52,7 @@ Jenkins CLI allows users to reference a file path using the syntax @[filepath], 
 5. **Command Execution**: Finally, Jenkins executes the modified command or script with the replaced file contents.
 
 i downloaded the jenikins cli using the wget command 
-![](https://drive.google.com/file/d/1-dMO9sm-qQV_vx1fTt2Fc4KkD0Wkpo29/view?usp=sharing)
+![builder 4](https://dl.dropbox.com/scl/fi/nvq9612rw82nwr8arjh7l/Pasted-image-20240331121014.png?rlkey=k55tyn5y60yq0uszjos3eiit5&st=gzb15ifm&dl=0)
 
 the command java -jar jenikind-cli.jar -s 'ip:port' help to give the list of all the commands 
 
@@ -205,28 +205,28 @@ ERROR: No such command kali. Available commands are above.
 The above are the list of commands we can execute in jenikins CLI
 
 i executed whoami cmd here
-![](https://drive.google.com/file/d/1jv4_9KluCgGVaW0dLsFaPgUT0LqWePPc/view?usp=sharing)
+![builder 5](https://dl.dropbox.com/scl/fi/q3g3urkz3qlnzwlierdoa/Pasted-image-20240331121429.png?rlkey=vv8x3to1jia0ukrdp7ubixwvr&st=3igyer7w&dl=0)
 
-![](https://drive.google.com/file/d/1NBFBfgctUkCBiE31cCSS1Uq73ghkt-w4/view?usp=sharing)
+![builder 6](https://dl.dropbox.com/scl/fi/s4rqdqed0xivmx33ye4yp/Pasted-image-20240331122025.png?rlkey=12lw9qnqw6e4nxc9ou6rbwwd8&st=n9xee0xs&dl=0)
 
 `'@/etc/passwd'`: This part of the command is specifying a file path, `'/etc/passwd'`, using the syntax `@filepath`
 
-![](https://drive.google.com/file/d/15HIduZ4n5wmkyfaLPUVT0ZS6nfuY8QS6/view?usp=sharing)
+![builder 7](https://dl.dropbox.com/scl/fi/250rh8ynd7wa0uw8glbs2/Pasted-image-20240331122250.png?rlkey=bxeeo0dveaik8uo98ujwkpt4c&st=lknji9iw&dl=0)
 
 We found the hostname by reading /etc/hostname file
 The hostname is “0f52c222a4cc”.
 
 I googled where Jenkins user files are stored
 
-![](https://drive.google.com/file/d/1SzcKcF3bXmAtTAQLDs_vkRwwMMZYDm8I/view?usp=sharing)
+![builder 8](https://dl.dropbox.com/scl/fi/l9fzmfmtrdox0h6ziw4xu/Pasted-image-20240331140629.png?rlkey=nid39ny7okgynp0p8bve2o825&st=yng7pwwi&dl=0)
 
 so modified the code and tried to read the user.txt file and got the user flag 
 
-![](https://drive.google.com/file/d/1tdbdYFWndeBqCkkeXb2XIcGhJBsr6rJ7/view?usp=drive_link)
+![builder 9](https://dl.dropbox.com/scl/fi/u0rfyktg4k5yw10x7crlv/Pasted-image-20240331142430.png?rlkey=z02etfvrxcq9tx4i4x31sp7b3&st=u30gts6t&dl=0)
 
 Jenkins [stores information](https://dev.to/pencillr/spawn-a-jenkins-from-code-gfa) about its user accounts in `/var/jenkins_home/users/users.xml`. Using `reload-node`, I’ll get the lines of that file, albeit a bit scrambed:
 
-![](https://drive.google.com/file/d/1brUEvNb_LYCPYFcHFIkvMKlRcVrQ2x3b/view?usp=sharing)
+![builder 10](https://dl.dropbox.com/scl/fi/tscw0ss6pjii8dqdywiu6/Pasted-image-20240331141106.png?rlkey=344bc2obwuikq23i01gjdkeym&st=k9jyzzua&dl=0)
 
 with this command i got the jennifier id with this i tried to view config file of jenifer 
 
@@ -234,8 +234,8 @@ java -jar jenkins-cli.jar -s 'http://10.129.230.169:8080' reload-job '@/var/jenk
 
 the output is very clumsy but in the end i found a password hash shown below
 
-![](https://drive.google.com/file/d/16AiGH4lZ4fAGcVynH_ImP-vXDkQi5hZl/view?usp=sharing)
-![](https://drive.google.com/file/d/1DI5g2hR0DIdhqImnxwvaHzU9WBgG7VYx/view?usp=sharing)
+![builder 11](https://dl.dropbox.com/scl/fi/7ik40pduoknse9hjpzsjk/Pasted-image-20240331134945.png?rlkey=u0poptfpbvhuboxdtwq26a5qw&st=z458acg5&dl=0)
+![](https://dl.dropbox.com/scl/fi/qqxosxa0p3rqq7uyiwfnu/Pasted-image-20240331135036.png?rlkey=xlz87d97tzbl1jb2lrzwvoq4e&st=8us0y2lb&dl=0)
 
 There's another way to get this password hash using Python code proof-of-concept (PoC) for exploiting a vulnerability in Jenkins servers that allows arbitrary file read through the Jenkins CLI.
 where i've mentioned below [Python POCs](#Python%20POCs)
@@ -245,32 +245,32 @@ I used JTR to crack the password in the config.xml he format is specified as bcr
 and then with the username jennifer and password princess i logged into the jenikins and here's the view of global credentials management 
 
 earlier we are unable to open this beacuse we aren't logged in as jennifer 
-![](https://drive.google.com/file/d/1m53loNOdCSeSjUXPQZAKoK99BicbNgOT/view?usp=sharing)
+![builder 12](https://dl.dropbox.com/scl/fi/z3chpo65pp6xcncjx87dq/Pasted-image-20240331135419.png?rlkey=if0bimue23yvw66hrnw9de4t1&st=hf2a2u1q&dl=0)
 
 if you inspect the value you will find private key in commented sections 
 
-![](https://drive.google.com/file/d/1OSM5b5TgDVHOhWr6cD7ne0jMe7555mhy/view?usp=sharing)
+![builder 13](https://dl.dropbox.com/scl/fi/toqbwv5ban14w1m8uynku/Pasted-image-20240331132427.png?rlkey=zi9dir3yjx6tjmpmw364ake4i&st=bbmlzopd&dl=0)
 
 we found the private key but it's encrypted so i googled how to decrypt Jenkins private key or secret key and it led me to this 
 
-![](https://drive.google.com/file/d/10bogPnVJJvfYkqXI1wDSSafGhTojUEKl/view?usp=sharing)
+![builder 14](https://dl.dropbox.com/scl/fi/a2y3s2tfhlyw74krfbj5j/Pasted-image-20240331133823.png?rlkey=msg2j5z64q18ysw81q3tmq5s1&st=2jysoh8f&dl=0)
 
 In the script console under manage jenkins i'v epasted this script i found in stack exchange and got the ssh key 
-![](https://drive.google.com/file/d/1TQw-l06NCeXBzCK5i9UeL3cRykmrJowc/view?usp=sharing)
+![builder 15](https://dl.dropbox.com/scl/fi/wfvou65zmh6nknlim1j1t/Pasted-image-20240331140116.png?rlkey=9n888kpnqtxej7dwn42enrhhq&st=hn3fzmfq&dl=0)
 
 so i stored the key and accessd ssh i got the shell login but for everything i do i'm getting permission denied as below
 
-![](https://drive.google.com/file/d/1QUp955GyWt5PRSdxnOfbIVXGxvisEDQa/view?usp=sharing)
+![builder 16](https://dl.dropbox.com/scl/fi/ka4frpdm2hev6x03l7frh/Pasted-image-20240331134218.png?rlkey=3nfuqk59uz5f0xi515fr4rbsm&st=ob3z5142&dl=0)
 
-![](https://drive.google.com/file/d/1k2idp5-h7I5yorBQD141JeK5OPdeOzKN/view?usp=sharing)
+![builder 17](https://dl.dropbox.com/scl/fi/0v8oowo5bozhntnan4nv5/Pasted-image-20240331134254.png?rlkey=v291ahpy6lzdzre6qnj3i68ex&st=ztkpoyhs&dl=0)
 
 so i gave the root permissions to the ssh file and logged in again and i got the root access as below
 
-![](https://drive.google.com/file/d/11Y5PghSKZkubpk80suRx_cC0psYan5PY/view?usp=sharing)
+![builder 18](https://dl.dropbox.com/scl/fi/7hylzkg2f32zkqs23su6e/Pasted-image-20240331134319.png?rlkey=2pyvhucuvm9pqm1hp2ad4xtl4&st=hl5j70y9&dl=0)
 
 cat root.txt gave me the root flag 
 
-![](https://drive.google.com/file/d/1v-CJ2dmA3zoRRTHmg1PG2hvU6ZEz-aSw/view?usp=sharing)
+![builder 19](https://dl.dropbox.com/scl/fi/bbdi6cqogdudrcpk77ksp/Pasted-image-20240331134642.png?rlkey=oiay33ownyq2vkwtz4x13b1gt&st=9ppe98hn&dl=0)
 
 
 
