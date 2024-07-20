@@ -11,6 +11,6 @@ we can read file name spaces in linux using / where spaces will be there
 
 ![](https://drive.google.com/file/d/1B-7SMILbIBhumg44whdIiRzUX_Gpxidd/view?usp=sharing)
 
-we can also access spaced filenames by encoding the filename in double quote
+we can also access spaced filenames by encoding the filename in double quote.
 
 ![](https://drive.google.com/file/d/1R-Foa2gewAgf0NdlnmlXiCiOMbvK53vf/view?usp=sharing)
