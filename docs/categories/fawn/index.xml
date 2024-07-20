@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FAWN on my Blog site</title><link>https://example.org/categories/fawn/</link><description>Recent content in FAWN on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 15:42:52 +0530</lastBuildDate><atom:link href="https://example.org/categories/fawn/index.xml" rel="self" type="application/rss+xml"/><item><title>Fawn</title><link>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files now we got the flag
+TASK 1
+What does the 3-letter acronym FTP stand for?
+file transfer protocol
+Which port does the FTP service listen on usually?
+port 21
+What acronym is used for the secure version of FTP?
+SFTP
+What is the command we can use to send an ICMP echo request to test our connection to the target?
+Ping
+From your scans, what version is FTP running on the target?</description></item></channel></rss>

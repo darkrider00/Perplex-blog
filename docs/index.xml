@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>my Blog site</title><link>https://example.org/</link><description>Recent content on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 20 Jul 2024 12:34:30 +0530</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Sql Injection Vulnerbility With Filter Bypass via XML Encoding</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/</link><pubDate>Sat, 20 Jul 2024 12:34:30 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/</guid><description>The above image is lab description from the above description
+we know that there is a database that contains username and password to solve the lab we have to retrieve the username and password and login to their account. Let&amp;rsquo;s take a look at the hint
+hint A web application firewall (WAF) will block requests that contain obvious signs of a SQL injection attack. You'll need to find a way to obfuscate your malicious query to bypass this filter.</description></item><item><title>Sql Injection Vulnerbility in Where Clause Allowing Retrieval of Hidden Data</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/</link><pubDate>Sat, 20 Jul 2024 12:31:38 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/</guid><description>in this description it&amp;rsquo;s saying that there is a SQL vuln in product category filter , to solve this lab we need to perform a SQL injection that causes application to display unreleases products
+this is the website dashboard since it&amp;rsquo;s mentioned that there is a vulnerability in product category let&amp;rsquo;s select the product category and capture the request in burp suite
+SELECT * FROM products WHERE category = &amp;lsquo;Gifts&amp;rsquo; AND released = 1</description></item><item><title>Sql Injection Vulnerbility Allowing Login Bypass</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/</link><pubDate>Sat, 20 Jul 2024 12:28:31 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/</guid><description>In this lab we need to by pass login as administrator to complete the lab We know our username is administrator
+The Website: Let&amp;rsquo;s go to login page and try some details and capture the request in burpsuite
+here we can see a post request captured in this burp let&amp;rsquo;s send this to repeater and play with some parameters
+from the request
+csrf=HsLJjSGkCiFEw8OYoi4IjOfa8mV2lQlv: - csrf stands for Cross-Site Request Forgery token.</description></item><item><title>Sql Injection Union Attack Determining the Number of Columns Returned by the Query</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-union-attack/</link><pubDate>Sat, 20 Jul 2024 12:19:33 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-union-attack/</guid><description>from the lab description we know that there is SQL vulnerability in product category filter , to solve the lab we need to perform a union attack that determine number of columns
+let&amp;rsquo;s access the lab The website to display null values we need to use the payload &amp;lsquo;+UNION+SELECT+NULL&amp;ndash; if 1 column in ther if 2 colums are there then we need tp use 2 NULLs so on
+i&amp;rsquo;ve started with null value and i got internal server error let&amp;rsquo;s try 2 same result let&amp;rsquo;s go for three</description></item><item><title>Sql Injection Querying Oracle</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-oracle/</link><pubDate>Fri, 19 Jul 2024 16:42:59 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-oracle/</guid><description>From the lab description we know that there is SQL vulnerability in product category and to solve this lab we need to display database version string
+And this is a ORACLE database
+Refer to SQL cheatsheet here
+https://portswigger.net/web-security/sql-injection/cheat-sheet
+TO retrieve the database version and contents these are the payloads available here
+Now let&amp;rsquo;s access the website From the website if we select the different categories mentioned here by selecting different categories the website is refining our search</description></item><item><title>Sql Injection Querying</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/</link><pubDate>Fri, 19 Jul 2024 16:38:06 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/</guid><description>From the lab description we know that There is SQL vulnerability in product category filter. To solve the lab we need to display the database version string
+Here the database is My SQL , Let&amp;rsquo;s head over to SQL cheat sheet for payloads refer to sql sheet for here
+here are the available list of payloads we can use for different types of databases
+Let&amp;rsquo;s access the lab the same thing we have here it will refine your search based on the category you select for detail walkthrough refer to SQL injection attack, querying the database type and version on Oracle</description></item><item><title>Sql Injection Listing Databse Contents</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/</link><pubDate>Fri, 19 Jul 2024 16:33:29 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/</guid><description>From the LAB description there is a SQL Vulnerability in the product category filter and to complete this lab we need to log in as administrator
+this lab contains oracle database refer to SQL CHEAT SHEET for payloads
+HINT: On Oracle databases, every SELECT statement must specify a table to select FROM. If your UNION SELECT attack does not query from a table, you will still need to include the FROM keyword followed by a valid table name.</description></item><item><title>Sql Injection</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing/</link><pubDate>Fri, 19 Jul 2024 16:26:59 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing/</guid><description>From the lab description This lab contains SQL injection Vulnerability in Product category filter to solve this lab we need to login as administrator this lab contains non oracle databases
+refer to SQL CHEAT SHEET for payloads Let&amp;rsquo;s access the lab like as usual we&amp;rsquo;ve intercepted the request and sent it to repeater now let&amp;rsquo;s check number of columns and determine the data type of those columns to perform a union attack</description></item><item><title>File Path Traversal Simple Case</title><link>https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/</link><pubDate>Fri, 19 Jul 2024 16:19:46 +0530</pubDate><guid>https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/</guid><description>Lab URL : https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/
+This lab objective is to read /etc/passwd file from the url )
+we can click on view item to get the more details about the product and if we look at the url :
+https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/product?productId=1but the parameter should be filename if we want to inject the payload so let&amp;rsquo;s open a image in new tab if we look at the url now :
+https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/image?filename=38.jpgsince we have a filename as a parameter we can use .</description></item><item><title>Crafty</title><link>https://example.org/hackthebox/windows/htb-crafty/</link><pubDate>Fri, 19 Jul 2024 16:11:07 +0530</pubDate><guid>https://example.org/hackthebox/windows/htb-crafty/</guid><description>machine IP : 10.10.11.249 startign with the nmap scan let&amp;rsquo;s do another namp scan with all ports to see if we can get any info
+we&amp;rsquo;ve found that 25565 port is open let&amp;rsquo;s focus on gathering more info
+add the ip to /etc/hosts to access the ip the above result is the result of wappalyzer extension for the website let&amp;rsquo;s explore the website
+website dashboard every option we click is being redirected to comming soon webpage we&amp;rsquo;ve have dound another subdomain play.</description></item><item><title>Sequel</title><link>https://example.org/hackthebox/starting-point/tier1/htb-sequel/</link><pubDate>Fri, 19 Jul 2024 16:05:20 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-sequel/</guid><description>TASK 1
+During our scan, which port do we find serving MySQL?
+on port 3306 mysql is running
+TASK 2
+What community-developed MySQL version is the target running? Ans: Maria DB
+TASK 3
+When using the MySQL command line client, what switch do we need to use in order to specify a login username?
+using the mysql manual page now we know that -h is used to connect to a host and -u used to specify the username</description></item><item><title>Responder</title><link>https://example.org/hackthebox/starting-point/tier1/htb-responder/</link><pubDate>Fri, 19 Jul 2024 16:00:53 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-responder/</guid><description>nmap scan
+unika.htb
+Which scripting language is being used on the server to generate webpages?
+PHP
+What is the name of the URL parameter which is used to load different language versions of the webpage?
+Ans: page
+Which of the following values for the page parameter would be an example of exploiting a Local File Include (LFI) vulnerability: &amp;ldquo;french.html&amp;rdquo;, &amp;ldquo;//10.10.14.6/somefile&amp;rdquo;, &amp;ldquo;../../../../../../../../windows/system32/drivers/etc/hosts&amp;rdquo;, &amp;ldquo;minikatz.exe&amp;rdquo;
+url : http://unika.htb/index.php?page=/../../../../../../../windows/system32/drivers/etc/hosts
+Which of the following values for the page parameter would be an example of exploiting a Remote File Include (RFI) vulnerability: &amp;ldquo;french.</description></item><item><title>Crocodile</title><link>https://example.org/hackthebox/starting-point/tier1/htb-crocodile/</link><pubDate>Fri, 19 Jul 2024 15:55:23 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-crocodile/</guid><description>What Nmap scanning switch employs the use of default scripts during a scan? Ans: -sC
+What service version is found to be running on port 21? Ans: vsftpd 3.0.3
+What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message? Ans: 230
+After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously? Ans: anonymous
+After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?</description></item><item><title>Appointment</title><link>https://example.org/hackthebox/starting-point/tier1/htb-appointment/</link><pubDate>Fri, 19 Jul 2024 15:49:30 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-appointment/</guid><description>TASK 1
+What does the acronym SQL stand for?
+Ans: Structured Query language
+TASK 2
+What is one of the most common type of SQL vulnerabilities? Ans: SQL Injection
+TASK 3
+What is the 2021 OWASP Top 10 classification for this vulnerability? searching on google will give us the answer ANS: A03:2021-Injection
+What does Nmap report as the service and version that are running on port 80 of the target?</description></item><item><title>Meow</title><link>https://example.org/hackthebox/starting-point/tier0/htb-meow/</link><pubDate>Fri, 19 Jul 2024 15:45:10 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-meow/</guid><description>What does the acronym VM stand for?
+Virtual machine
+What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It&amp;rsquo;s also known as a console or shell.
+Terminal
+What service do we use to form our VPN connection into HTB labs? Openvpn
+What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files now we got the flag
+TASK 1
+What does the 3-letter acronym FTP stand for?
+file transfer protocol
+Which port does the FTP service listen on usually?
+port 21
+What acronym is used for the secure version of FTP?
+SFTP
+What is the command we can use to send an ICMP echo request to test our connection to the target?
+Ping
+From your scans, what version is FTP running on the target?</description></item><item><title>Dancing</title><link>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</link><pubDate>Fri, 19 Jul 2024 15:37:07 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</guid><description>What does the 3-letter acronym SMB stand for?
+****** ******* ****k
+What port does SMB use to operate at?
+445
+What is the service name for port 445 that came up in our Nmap scan? microsoft-ds
+What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we can use with the smbclient utility to &amp;rsquo;list&amp;rsquo; the available shares on Dancing?
+-L
+How many shares are there on Dancing?
+4
+What is the name of the share we are able to access in the end with a blank password?</description></item><item><title>Keeper</title><link>https://example.org/hackthebox/linux/htb-keeper/</link><pubDate>Fri, 19 Jul 2024 15:17:35 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-keeper/</guid><description>Starting with a nmap scan we have this result When we access the IP address on port 80 via a browser, we can see there is just one link which redirects to tickets.keeper.htb/rt. But in order to do that we need to add this IP to our /etc/hosts file
+10.129.122.221 tickets.keeper.htb
+10.129.122.221 keeper.htb
+i&amp;rsquo;ve ried some default passweords and dource code but it wasn&amp;rsquo;t helpful
+i&amp;rsquo;ve googled and searched in exploit db but found no exploit mentioned in the web page so i searched for default creds for Request tracker</description></item><item><title>Perfection</title><link>https://example.org/hackthebox/linux/htb-perfection/</link><pubDate>Fri, 19 Jul 2024 14:39:25 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-perfection/</guid><description>Startign with nmap
+the website dashboard
+checked the wappalyzer to find the technologies website is using but couldn&amp;rsquo;t find any I tried directory fuzzing
+Found this at the bottom of the website we got another info that susan is sysadmin
+we can see this in the about us and there might me a vulnerability on secure coding there is a input field in the website , there might be a input validation vulnerbility</description></item><item><title>Builder</title><link>https://example.org/hackthebox/linux/htb-builder/</link><pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-builder/</guid><description>I started with a Nmap scan to know things that are running on this machine
+from the above nmap scan we can see port 22 and 8080 is open in port 8080 jetty is running (jetty is a java web server or a servelet container) https://en.wikipedia.org/wiki/Jetty_(web_server)
+Here&amp;rsquo;s the jenikins dashboard and jenikins version is 2.441
+in the people tab we have a user called jennifer
+enkins is a Java application. The server is Jetty, a Java web server.</description></item><item><title>Academy</title><link>https://example.org/hackthebox/linux/htb-academy/</link><pubDate>Fri, 19 Jul 2024 14:09:37 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-academy/</guid><description>Starting with Nmap we won&amp;rsquo;t be able to connect to the website using only ip address so we can access the website after adiing the website in /etc/hosts
+The POST request to register a new user is interesting:
+While the uid (user id) and double password fields are expected, roleid is interesting. I’ll register again, but this time I’ll use Burp proxy to intercept the POST and change roleid to 1.</description></item><item><title>Level5</title><link>https://example.org/bandit/bandit-level-5/</link><pubDate>Fri, 19 Jul 2024 13:52:32 +0530</pubDate><guid>https://example.org/bandit/bandit-level-5/</guid><description>in this level there are multiple files so i tried to to read multiple files at once and this is the result and i got the flag
+another way to do it is
+first we see types of all files present in the inhere directory and then see which file is readable file and then try to read the file and then they got the flag
+when I searched in google for how to list multiple files in Linux I found</description></item><item><title>Level4</title><link>https://example.org/bandit/bandit-level-4/</link><pubDate>Fri, 19 Jul 2024 13:50:24 +0530</pubDate><guid>https://example.org/bandit/bandit-level-4/</guid><description>in this level there is a directory called inhere directory and there is a hidden file named .hidden file and can be seen using ls -la command</description></item><item><title>Level3</title><link>https://example.org/bandit/bandit-level-3/</link><pubDate>Fri, 19 Jul 2024 13:47:12 +0530</pubDate><guid>https://example.org/bandit/bandit-level-3/</guid><description>file name spaces in Linux - https://linuxhandbook.com/filename-spaces-linux/
+we can read file name spaces in linux using / where spaces will be there
+we can also access spaced filenames by encoding the filename in double quote</description></item><item><title>Level2</title><link>https://example.org/bandit/bandit-level-2/</link><pubDate>Fri, 19 Jul 2024 13:42:27 +0530</pubDate><guid>https://example.org/bandit/bandit-level-2/</guid><description>reference links - https://www.webservertalk.com/dashed-filename (dashed file name)
+special characters - https://tldp.org/LDP/abs/html/special-chars.html (advanced bash scripting)
+we can read - file names using cat &amp;lt; we can also read -shed file names using cat ./file
+remove a - file using rm -rf &amp;ndash;</description></item><item><title>Level1</title><link>https://example.org/bandit/bandit-level-1/</link><pubDate>Fri, 19 Jul 2024 13:40:51 +0530</pubDate><guid>https://example.org/bandit/bandit-level-1/</guid><description>Question image
+using the ls command I’ve found readme file and using cat I’ve read the readme file and found password to the level 1 of bandit</description></item><item><title>Level0</title><link>https://example.org/bandit/bandit-level-0/</link><pubDate>Fri, 19 Jul 2024 13:25:15 +0530</pubDate><guid>https://example.org/bandit/bandit-level-0/</guid><description>Starting from this blog i&amp;rsquo;m going ot solve bandit levels starting with level 0
+link : https://overthewire.org/wargames/bandit/
+In this the username and password is given as bandit 0 sing that I’ve logged in using SSH</description></item><item><title>Hello</title><link>https://example.org/posts/new-blog/</link><pubDate>Thu, 18 Jul 2024 16:29:31 +0530</pubDate><guid>https://example.org/posts/new-blog/</guid><description>Hello welcome to my blog</description></item></channel></rss>
