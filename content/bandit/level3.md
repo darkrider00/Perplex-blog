@@ -9,7 +9,7 @@ file name spaces in Linux - [https://linuxhandbook.com/filename-spaces-linux/](h
 
 we can read file name spaces in linux using / where spaces will be there
 
-![](https://dl.dropbox.com/0e3a00389ed32631/EfKXZ7i_-LRAguzeA7-ydSkBZWQc1EW1tqkSbi7WeT9Fqg?e=GQoyLl)
+![file spaces](https://dl.dropbox.com/0e3a00389ed32631/EfKXZ7i_-LRAguzeA7-ydSkBZWQc1EW1tqkSbi7WeT9Fqg?e=GQoyLl)
 
 we can also access spaced filenames by encoding the filename in double quote.
 
