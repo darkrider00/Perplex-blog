@@ -29,7 +29,8 @@ Virtual machine
 What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It&amp;rsquo;s also known as a console or shell.
 Terminal
 What service do we use to form our VPN connection into HTB labs? Openvpn
-What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files now we got the flag
+What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files
+now we got the flag
 TASK 1
 What does the 3-letter acronym FTP stand for?
 file transfer protocol

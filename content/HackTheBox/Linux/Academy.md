@@ -7,6 +7,7 @@ categories = ["hackthebox","Academy","linux","Easy"]
 
 
 Starting with Nmap
+
 ![academy 1](https://dl.dropbox.com/scl/fi/fqp4hq89ijjlcifcw6gol/Pasted-image-20240331223815.png?rlkey=oyet4dj9nvzfsmqij9i10ls8d&st=yha42nhs&dl=0)
 
 
@@ -16,7 +17,7 @@ we won't be able to connect to the website using only ip address so we can acces
 
 The POST request to register a new user is interesting:
 
-![](https://dl.dropbox.com/scl/fi/3ydotg5te40jtunqco2iz/Pasted-image-20240331225045.png?rlkey=l3h0i9qs0qggx7parjvcu28s8&st=rwq9dg95&dl=0)
+![academy s](https://dl.dropbox.com/scl/fi/3ydotg5te40jtunqco2iz/Pasted-image-20240331225045.png?rlkey=l3h0i9qs0qggx7parjvcu28s8&st=rwq9dg95&dl=0)
 
 
 While the `uid` (user id) and double password fields are expected, `roleid` is interesting. I’ll register again, but this time I’ll use Burp proxy to intercept the POST and change `roleid` to 1.
@@ -26,6 +27,7 @@ While the `uid` (user id) and double password fields are expected, `roleid` 
 after changing the role everythign works same but this time it logged in to admin panel 
 
 here's the homepage of dev-staging-01
+
 ![academy 4](https://dl.dropbox.com/scl/fi/hp8pvnduywaou84pz7zjx/Pasted-image-20240331230121.png?rlkey=igx80780zip64fg115479pweu&st=50v6jgrv&dl=0)
 
 
@@ -42,9 +44,11 @@ after a bit of research i've found this
 https://www.rapid7.com/db/modules/exploit/unix/http/laravel_token_unserialize_exec/
 
 i fired up msfconsole ot use the exploit
+
 ![academy 6](https://dl.dropbox.com/scl/fi/xpjkef41t15nirzi4bx2y/Pasted-image-20240331232245.png?rlkey=6z7akybumyh9ftok3n7hg78n2&st=6jqbvauu&dl=0)
 
 after setting Rhost Lhost options and running we got a terminal
+
 ![academy 7](https://dl.dropbox.com/scl/fi/u4cq5a2l8j8e47b1807ne/Pasted-image-20240331233056.png?rlkey=diuzhxh6qel7zsmwdv3kdlyf8&st=c629ddfe&dl=0)
 
 we used python3 -c 'import pty;pty.spawn("bash")' to beautify the terminal 
@@ -54,6 +58,7 @@ we used python3 -c 'import pty;pty.spawn("bash")' to beautify the terminal
 from the above we can login with user cry0l1t3
 `cr0l1t3` user was a member of the `adm` group. On a typical Linux system, this group is responsible for system administration and, notably, monitoring.
 so loggedin with cry0l1t3 user and got the user flag
+
 ![academy 9](https://dl.dropbox.com/scl/fi/al16mvqc0frimdn1stmox/Pasted-image-20240331235258.png?rlkey=zm49m7f4zyp4iy17298d6p14b&st=y6d1i765&dl=0)
 
 using log inspection tool using the `aureport` tool I was able to find credentials for the `mrb3n` user

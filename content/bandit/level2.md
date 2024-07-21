@@ -11,6 +11,7 @@ reference links - [https://www.webservertalk.com/dashed-filename](https://www.we
 special characters - [https://tldp.org/LDP/abs/html/special-chars.html](https://tldp.org/LDP/abs/html/special-chars.html) (advanced bash scripting)
 
 we can read - file names using cat < <filename>
+
 ![readin file name 1](https://dl.dropbox.com/scl/fi/hlm4bazf9s2dbuxph3jwh/Pasted-image-20240325163854.png?rlkey=od4xzotasbtkb74l951whx1c9&st=70anhbhy&dl=0)
 
 ![reading file name 2](https://dl.dropbox.com/scl/fi/6sdd2ll0tnc7cjyqow579/Pasted-image-20240325162950.png?rlkey=l7hqguusxtv43idu0j376zv7g&st=591c5dvh&dl=0)

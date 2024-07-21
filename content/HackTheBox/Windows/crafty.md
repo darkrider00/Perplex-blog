@@ -32,21 +32,25 @@ we've have dound another subdomain play.crafty.htb let's do subdomain enum to fi
 ![crafty 6](https://dl.dropbox.com/scl/fi/dztzrtkzv5a4afucr5lii/Pasted-image-20240507083543.png?rlkey=4k2hedof62t6ue9zvvn54b7u9&st=1pwp5wk9&dl=0)
 
 I haven't found anything intresting in the home page of that website but in the coming soon webpage i've found 
+
 ![crafty 7](https://dl.dropbox.com/scl/fi/q6632g6glq5snj39exa70/Pasted-image-20240507083832.png?rlkey=en1u94dxtxeoxxzfii42yqusf&st=sfi7cnsh&dl=0)
 
 ![crafty 8](https://dl.dropbox.com/scl/fi/pubrjh9tks86ozirpimmk/Pasted-image-20240507084653.png?rlkey=cp28ecwa8vb8fw9h6nc80y0yp&st=cb0wg4nr&dl=0)
 
 the abpve result is a gobsuter scan result we haven't found anything intresting let's try some directories since we've found some info in comments 
+
 ![crafty 9](https://dl.dropbox.com/scl/fi/unubwbvutk355jhku1wg5/Pasted-image-20240507085116.png?rlkey=4ph24vc4ubnyausuz1potw7a9&st=gk2cjbw0&dl=0)
 
 Intresting , we've got 403 error saying we don't have access to go that directory
 
 when i searched about port 25565 i got the result saying it's minecraft default port
+
 ![crafty 10](https://dl.dropbox.com/scl/fi/je8poght61r53weui1e1d/Pasted-image-20240507085321.png?rlkey=b6en9qkskeo7n09mskqb8ky7w&st=4qbgj3ri&dl=0)
 
 since we got a port let's connect to multiplayer with the machine ip and port number and see what happens
 
 from the nmap scan result i searched for Minecraft vulnerabilities of that version and i found this
+
 ![crafty 11](https://dl.dropbox.com/scl/fi/ktq8pxrzuqpddj7hh8wmv/Pasted-image-20240507092437.png?rlkey=3mvtflfrmqk79rnloyjw4ht5n&st=ufb49crl&dl=0)
 
 ![crafty 12](https://dl.dropbox.com/scl/fi/tof526wcwy1jm1lx3sf64/Pasted-image-20240507095552.png?rlkey=b8ol5k4sqqfl55534h09x0o9a&st=bkps411h&dl=0)

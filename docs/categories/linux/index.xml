@@ -29,7 +29,8 @@ Virtual machine
 What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It&amp;rsquo;s also known as a console or shell.
 Terminal
 What service do we use to form our VPN connection into HTB labs? Openvpn
-What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files now we got the flag
+What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files
+now we got the flag
 TASK 1
 What does the 3-letter acronym FTP stand for?
 file transfer protocol
@@ -48,18 +49,22 @@ What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we c
 -L
 How many shares are there on Dancing?
 4
-What is the name of the share we are able to access in the end with a blank password?</description></item><item><title>Keeper</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-keeper/</link><pubDate>Fri, 19 Jul 2024 15:17:35 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-keeper/</guid><description>Starting with a nmap scan we have this result When we access the IP address on port 80 via a browser, we can see there is just one link which redirects to tickets.keeper.htb/rt. But in order to do that we need to add this IP to our /etc/hosts file
+What is the name of the share we are able to access in the end with a blank password?</description></item><item><title>Keeper</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-keeper/</link><pubDate>Fri, 19 Jul 2024 15:17:35 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-keeper/</guid><description>Starting with a nmap scan we have this result
+When we access the IP address on port 80 via a browser, we can see there is just one link which redirects to tickets.keeper.htb/rt. But in order to do that we need to add this IP to our /etc/hosts file
 10.129.122.221 tickets.keeper.htb
 10.129.122.221 keeper.htb
 i&amp;rsquo;ve ried some default passweords and dource code but it wasn&amp;rsquo;t helpful
-i&amp;rsquo;ve googled and searched in exploit db but found no exploit mentioned in the web page so i searched for default creds for Request tracker</description></item><item><title>Perfection</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-perfection/</link><pubDate>Fri, 19 Jul 2024 14:39:25 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-perfection/</guid><description>Startign with nmap
+i&amp;rsquo;ve googled and searched in exploit db but found no exploit mentioned in the web page</description></item><item><title>Perfection</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-perfection/</link><pubDate>Fri, 19 Jul 2024 14:39:25 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-perfection/</guid><description>Startign with nmap
 the website dashboard
 checked the wappalyzer to find the technologies website is using but couldn&amp;rsquo;t find any I tried directory fuzzing
-Found this at the bottom of the website we got another info that susan is sysadmin
-we can see this in the about us and there might me a vulnerability on secure coding there is a input field in the website , there might be a input validation vulnerbility</description></item><item><title>Builder</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-builder/</link><pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-builder/</guid><description>I started with a Nmap scan to know things that are running on this machine
+Found this at the bottom of the website
+we got another info that susan is sysadmin
+we can see this in the about us and there might me a vulnerability on secure coding
+there is a input field in the website , there might be a input validation vulnerbility</description></item><item><title>Builder</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-builder/</link><pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-builder/</guid><description>I started with a Nmap scan to know things that are running on this machine
 from the above nmap scan we can see port 22 and 8080 is open in port 8080 jetty is running (jetty is a java web server or a servelet container) https://en.wikipedia.org/wiki/Jetty_(web_server)
 Here&amp;rsquo;s the jenikins dashboard and jenikins version is 2.441
 in the people tab we have a user called jennifer
-enkins is a Java application. The server is Jetty, a Java web server.</description></item><item><title>Academy</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-academy/</link><pubDate>Fri, 19 Jul 2024 14:09:37 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-academy/</guid><description>Starting with Nmap we won&amp;rsquo;t be able to connect to the website using only ip address so we can access the website after adiing the website in /etc/hosts
+enkins is a Java application. The server is Jetty, a Java web server.</description></item><item><title>Academy</title><link>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-academy/</link><pubDate>Fri, 19 Jul 2024 14:09:37 +0530</pubDate><guid>https://santhoshvardan-blog.vercel.app/hackthebox/linux/htb-academy/</guid><description>Starting with Nmap
+we won&amp;rsquo;t be able to connect to the website using only ip address so we can access the website after adiing the website in /etc/hosts
 The POST request to register a new user is interesting:
 While the uid (user id) and double password fields are expected, roleid is interesting. I’ll register again, but this time I’ll use Burp proxy to intercept the POST and change roleid to 1.</description></item></channel></rss>

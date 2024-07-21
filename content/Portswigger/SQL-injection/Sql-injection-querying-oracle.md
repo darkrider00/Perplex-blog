@@ -5,7 +5,7 @@ slug = "portswigger-SQL-database-querying-oracle"
 categories = ["portswigger","SQL injection","querying databases","MYSQL","Microsoft"]
 +++
 
-![](https://drive.google.com/file/d/1oFMx9Ha5o5me8a3OXrByfNknOYb3hhib/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/zr2psydu1suf4gzl7vmzh/Pasted-image-20240528110905.png?rlkey=slionxwxgkzbbqpfz1zwwhq82&st=r1siyj6f&dl=0)
 
 From the lab description we know that there is SQL vulnerability in product category and to solve this lab we need to display database version string
 
@@ -17,10 +17,11 @@ https://portswigger.net/web-security/sql-injection/cheat-sheet
 
 TO retrieve the database version and contents these are the payloads available here
 
-![](https://drive.google.com/file/d/1E6fhX0hv6aka4fiUS90v9XK5xGlkxl6h/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/w81634fm5rwb361kn4kyc/Pasted-image-20240528111334.png?rlkey=lrn8p3cs5tus982ydfdzoa038&st=mt7kh3an&dl=0)
 
 Now let's access the website
-![](https://drive.google.com/file/d/1E6fhX0hv6aka4fiUS90v9XK5xGlkxl6h/view?usp=sharing)
+
+![](https://dl.dropbox.com/scl/fi/wnnjfjeksnp9budwdf445/Pasted-image-20240528111621.png?rlkey=j9ri37dpdqqfbraj3uuzx6n4j&st=0zame2s0&dl=0)
 
 From the website if we select the different categories mentioned  here by selecting different categories the website is refining our search 
 
@@ -28,7 +29,7 @@ if we observe we are getting the product and it's details so first we have to de
 
 to determine the number of problems in the table we can use ORDER BY and see result 
 
-![](https://drive.google.com/file/d/1DySBGg8qs-XsFaCDB740z1gfw7LP72-M/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/ga6tdkl9xsf4ww3sp48ls/Pasted-image-20240528112029.png?rlkey=25qf0lhe33ujpgtqrp62yvpd0&st=bdkqo7wg&dl=0)
 
 We've intercepted our request and we'll send it to repeater and inject our payload
 
@@ -46,7 +47,7 @@ Since we know at least 2 columns are present in the table let's try order by 3
 
 use ctrl + u for url encoding
 
-![](https://drive.google.com/file/d/1dNTUzsOrYzPsIFQYlT2wgubakcXpXDaH/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/mz1bx13gq4g17b2y3kgk3/Pasted-image-20240528112609.png?rlkey=sp7v30fo5b9ia9l6tc2vn0cu0&st=kbaasmem&dl=0)
 
 we got a internal server error that means only 2 columns are present now let's focus on retrieving version number  
 
@@ -72,8 +73,8 @@ so our payload will be `'UNION SELECT banner, NULL FROM v$version--`
 
 so i injected my payload and boom!
 
-![](https://drive.google.com/file/d/1V0oTl2OVyotICm_noL7lOCnaWW8QCH3P/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/akvly9ts8mm9x4r0mcbke/Pasted-image-20240528113754.png?rlkey=bgcicoqoes065af78dcdya966&st=ppl8wew0&dl=0)
 
 we displayed the version number on the website
 
-![](https://drive.google.com/file/d/1C8G1t1oJFltHEwGqMgBrLaWsSQaJ3-PO/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/s5sn15s9w3tqcw2n8y5ye/Pasted-image-20240528113833.png?rlkey=b9ua2edm8a9cjbbxgz5fsvzp5&st=6o5h7ssj&dl=0)

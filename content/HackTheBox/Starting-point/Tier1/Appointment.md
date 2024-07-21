@@ -26,6 +26,7 @@ ANS: **A03:2021**-Injection
 
 What does Nmap report as the service and version that are running on port 80 of the target?
 - to know the service on port 80 we need to run nmap scan on port 80 
+
 ![appointment 1](https://dl.dropbox.com/scl/fi/gkrn445j9c61xfzcz0cm3/Pasted-image-20240531100158.png?rlkey=mtf3ko33w151lqs1qmjmjne4s&st=15j21gwp&dl=0)
 
 Apache httpd 2.4.38 ((Debian)) service is running on port 80 
@@ -47,6 +48,7 @@ Ans: #
 
 If user input is not handled carefully, it could be interpreted as a comment. Use a comment to login as admin without knowing the password. What is the first word on the webpage returned?
 Ans: Congratulations!
+
 ![appointment 2](https://dl.dropbox.com/scl/fi/ohptivmouwwpju24e00ek/Pasted-image-20240531100537.png?rlkey=ed4lbe3yyc7x8rxhhrzhythjp&st=fq5m9663&dl=0)
 
 the website

@@ -52,9 +52,11 @@ https://www.mysqltutorial.org/mysql-cheat-sheet/ refer to this for more detailed
 ![sequel 4](https://dl.dropbox.com/scl/fi/v3n8esak1i5vrkln6hu47/Pasted-image-20240531123043.png?rlkey=zhwrwk6oac0kc8rdetu7ziih4&st=cq0ps4s6&dl=0)
 
 we are in now let's continue
+
 ![sequel 5](https://dl.dropbox.com/scl/fi/ntglot928koxpl1sqp5a8/Pasted-image-20240531123247.png?rlkey=bt70hvfe3ccmti524kk2j8puq&st=udyf179j&dl=0)
 
 the database unique to this host is htb let's use htb 
+
 ![sequel 6](https://dl.dropbox.com/scl/fi/ibhuunvmrfk09jqo9maux/Pasted-image-20240531123547.png?rlkey=tig2xku0smxzgbu23nph1vra7&st=32h2olwf&dl=0)
 
 Submit root flag

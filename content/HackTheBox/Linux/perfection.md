@@ -17,22 +17,27 @@ checked the wappalyzer to find the technologies website is using but couldn't fi
 I tried directory fuzzing 
 
 Found this at the bottom of the website 
+
 ![perfection 2](https://dl.dropbox.com/scl/fi/4h7qzrzgdij4y2mwggn6d/Pasted-image-20240428172356.png?rlkey=h55s17ycmae2gj42q3fis4qlf&st=v7skct6p&dl=0)
 
 ![perfection 3](https://dl.dropbox.com/scl/fi/eosiqi38dyjraggin3hko/Pasted-image-20240428172442.png?rlkey=wc4xvjbx8rcus2ryp833h2yxk&st=onml3qmn&dl=0)
 
 ![perfection 4](https://dl.dropbox.com/scl/fi/n23s7rj4ljwibar8y34q6/Pasted-image-20240428172517.png?rlkey=p98x6u6apxkdbk6r4gzrgitwq&st=q1fa4xj7&dl=0)
+
 we got another info that susan is sysadmin 
 
 we can see this in the about us and there might me a vulnerability on secure coding
+
 ![perfection 5](https://dl.dropbox.com/scl/fi/8czuqbffm3m6ybblxlyp2/Pasted-image-20240428172611.png?rlkey=mlz0ojlkmoxkm2bj14u40di30&st=wjmf3l0j&dl=0)
 
 there is a input field in the website , there might be a input validation vulnerbility
 
 let's do some rearch on the technologies the website is using WEBrick 
+
 ![perfection 6](https://dl.dropbox.com/scl/fi/ybz3os28u7dpuczy6lb4u/Pasted-image-20240428172643.png?rlkey=qcxrlcqbj5zal9b1tra5c3oj8&st=k1roabx6&dl=0)
 
 but there is no information about vulnerbilities
+
 ![perfection 7](https://dl.dropbox.com/scl/fi/vmner2o0vp56ovlx168oa/Pasted-image-20240428172712.png?rlkey=p5xq5p78wqtkzgri697dyvuxi&st=5drybtfk&dl=0)
 
 
@@ -49,6 +54,7 @@ to know how to perform a scan in burpsuite refer to [[scanning with burp scanner
 so i confirmed that there is a way to bypass the input in the calculator
 
 after adding single '  i got this result 
+
 ![perfection 10](https://dl.dropbox.com/scl/fi/n5gokptftk1ng998x3prj/Pasted-image-20240428173049.png?rlkey=1eiijyj3hgvbgd5m8pfuamfeq&st=tvc4gir2&dl=0)
 
 after bit of research i came to know that it is a SSTI vulnerbility (server side template injection)
@@ -62,10 +68,12 @@ search for ruby payloads in this website
 
 
 let's try some payloads and see what happens
+
 ![perfection 12](https://dl.dropbox.com/scl/fi/7mfd8koua6ont36yyx39x/Pasted-image-20240428173215.png?rlkey=7o5e94a8vauv3qsuvcfgf4e6a&st=zhcwz6to&dl=0)
 
 we've got same result let's keep trying
 to encode select the characters and do ctrl+u to do url encoding
+
 ![perfection 13](https://dl.dropbox.com/scl/fi/58yrzotidpsj41pym9yvn/Pasted-image-20240428173655.png?rlkey=ai1mzgkwjscdhzxqgktcied94&st=1sfko5bl&dl=0)
 
 i've multiplied 7* 7 and i got the result 49 so <%= 7* 7 %> payload works 

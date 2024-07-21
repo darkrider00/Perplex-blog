@@ -6,17 +6,18 @@ categories = ["portswigger","SQL injection","login bypass"]
 +++
 
 
-![](https://drive.google.com/file/d/1ITtmA4K7Lxh2f2J3GQdxO3X_bWiyDYbQ/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/7fa6f1rgyjliqazdcqo59/Pasted-image-20240528104213.png?rlkey=iizn7u6ldi5nru91sgr4ljb7f&st=iaoshprc&dl=0)
 
 In this lab we need to by pass login as administrator to complete the lab 
 We know our username is `administrator`
 
 The Website:
-![](https://drive.google.com/file/d/1QARwOBOCfTQK7vTIxzwQMo3WTgtHjanm/view?usp=sharing)
+
+![](https://dl.dropbox.com/scl/fi/4w8s7hh3xl0gj4qoofbcg/Pasted-image-20240528104517.png?rlkey=itelqiwvtegie92z5y0jj0e9n&st=s9aohv4t&dl=0)
 
 Let's go to login page and try some details and capture the request in burpsuite
 
-![](https://drive.google.com/file/d/1ne9FINtj9Bl9-X89oKIpAQOOXc__v0mc/view?usp=sharing)
+![](https://dl.dropbox.com/scl/fi/y1ldzhvjd67jbpfumws7f/Pasted-image-20240528104736.png?rlkey=972mr8c0dhxf5xe7t26x0x65u&st=4g9x1s0k&dl=0)
 
 here we can see a post request captured in this burp let's send this to repeater and play with some parameters
 
@@ -31,4 +32,5 @@ anyway so if we use username as administrator and comment out the password part 
 SELECT USERNAME FROM users WHERE username ='administrator'-- and PASSOWRD = 'admin'
 
 let's give this username and password to login page and boom!!
-![](https://drive.google.com/file/d/1uyp3nJvlfrX2TNV8rYLoepfB-r_x92zR/view?usp=sharing)
+
+![](https://dl.dropbox.com/scl/fi/tu3fmygab880h7x4bak3u/Pasted-image-20240528110813.png?rlkey=rdjksotfjt4akazppvmo3xcsb&st=632rjonh&dl=0)

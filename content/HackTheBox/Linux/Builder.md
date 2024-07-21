@@ -52,6 +52,7 @@ Jenkins CLI allows users to reference a file path using the syntax @[filepath], 
 5. **Command Execution**: Finally, Jenkins executes the modified command or script with the replaced file contents.
 
 i downloaded the jenikins cli using the wget command 
+
 ![builder 4](https://dl.dropbox.com/scl/fi/nvq9612rw82nwr8arjh7l/Pasted-image-20240331121014.png?rlkey=k55tyn5y60yq0uszjos3eiit5&st=gzb15ifm&dl=0)
 
 the command java -jar jenikind-cli.jar -s 'ip:port' help to give the list of all the commands 
@@ -205,6 +206,7 @@ ERROR: No such command kali. Available commands are above.
 The above are the list of commands we can execute in jenikins CLI
 
 i executed whoami cmd here
+
 ![builder 5](https://dl.dropbox.com/scl/fi/q3g3urkz3qlnzwlierdoa/Pasted-image-20240331121429.png?rlkey=vv8x3to1jia0ukrdp7ubixwvr&st=3igyer7w&dl=0)
 
 ![builder 6](https://dl.dropbox.com/scl/fi/s4rqdqed0xivmx33ye4yp/Pasted-image-20240331122025.png?rlkey=12lw9qnqw6e4nxc9ou6rbwwd8&st=n9xee0xs&dl=0)
@@ -235,6 +237,7 @@ java -jar jenkins-cli.jar -s 'http://10.129.230.169:8080' reload-job '@/var/jenk
 the output is very clumsy but in the end i found a password hash shown below
 
 ![builder 11](https://dl.dropbox.com/scl/fi/7ik40pduoknse9hjpzsjk/Pasted-image-20240331134945.png?rlkey=u0poptfpbvhuboxdtwq26a5qw&st=z458acg5&dl=0)
+
 ![](https://dl.dropbox.com/scl/fi/qqxosxa0p3rqq7uyiwfnu/Pasted-image-20240331135036.png?rlkey=xlz87d97tzbl1jb2lrzwvoq4e&st=8us0y2lb&dl=0)
 
 There's another way to get this password hash using Python code proof-of-concept (PoC) for exploiting a vulnerability in Jenkins servers that allows arbitrary file read through the Jenkins CLI.
@@ -245,6 +248,7 @@ I used JTR to crack the password in the config.xml he format is specified as bcr
 and then with the username jennifer and password princess i logged into the jenikins and here's the view of global credentials management 
 
 earlier we are unable to open this beacuse we aren't logged in as jennifer 
+
 ![builder 12](https://dl.dropbox.com/scl/fi/z3chpo65pp6xcncjx87dq/Pasted-image-20240331135419.png?rlkey=if0bimue23yvw66hrnw9de4t1&st=hf2a2u1q&dl=0)
 
 if you inspect the value you will find private key in commented sections 
@@ -256,6 +260,7 @@ we found the private key but it's encrypted so i googled how to decrypt Jenkins 
 ![builder 14](https://dl.dropbox.com/scl/fi/a2y3s2tfhlyw74krfbj5j/Pasted-image-20240331133823.png?rlkey=msg2j5z64q18ysw81q3tmq5s1&st=2jysoh8f&dl=0)
 
 In the script console under manage jenkins i'v epasted this script i found in stack exchange and got the ssh key 
+
 ![builder 15](https://dl.dropbox.com/scl/fi/wfvou65zmh6nknlim1j1t/Pasted-image-20240331140116.png?rlkey=9n888kpnqtxej7dwn42enrhhq&st=hn3fzmfq&dl=0)
 
 so i stored the key and accessd ssh i got the shell login but for everything i do i'm getting permission denied as below
