@@ -39,7 +39,7 @@
                             {{ range ( $.Site.RegularPages | first ($.Site.Params.homePage.numOfRecentPosts | default 5) ) }}
                                 {{ $page := . }}
                                 <li>
-                                    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ $page.Title }}</a>
+                                    • <a href="{{ .Permalink }}" title="{{ .Title }}">{{ $page.Title }}</a>
                                 </li>
                             {{ end }}
                         </ul>
