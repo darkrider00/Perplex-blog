@@ -1,68 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HackTheBoxes on my Blog site</title><link>https://example.org/hackthebox/</link><description>Recent content in HackTheBoxes on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 16:11:07 +0530</lastBuildDate><atom:link href="https://example.org/hackthebox/index.xml" rel="self" type="application/rss+xml"/><item><title>Crafty</title><link>https://example.org/hackthebox/windows/htb-crafty/</link><pubDate>Fri, 19 Jul 2024 16:11:07 +0530</pubDate><guid>https://example.org/hackthebox/windows/htb-crafty/</guid><description>machine IP : 10.10.11.249 startign with the nmap scan let&amp;rsquo;s do another namp scan with all ports to see if we can get any info
-we&amp;rsquo;ve found that 25565 port is open let&amp;rsquo;s focus on gathering more info
-add the ip to /etc/hosts to access the ip the above result is the result of wappalyzer extension for the website let&amp;rsquo;s explore the website
-website dashboard every option we click is being redirected to comming soon webpage we&amp;rsquo;ve have dound another subdomain play.</description></item><item><title>Sequel</title><link>https://example.org/hackthebox/starting-point/tier1/htb-sequel/</link><pubDate>Fri, 19 Jul 2024 16:05:20 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-sequel/</guid><description>TASK 1
-During our scan, which port do we find serving MySQL?
-on port 3306 mysql is running
-TASK 2
-What community-developed MySQL version is the target running? Ans: Maria DB
-TASK 3
-When using the MySQL command line client, what switch do we need to use in order to specify a login username?
-using the mysql manual page now we know that -h is used to connect to a host and -u used to specify the username</description></item><item><title>Responder</title><link>https://example.org/hackthebox/starting-point/tier1/htb-responder/</link><pubDate>Fri, 19 Jul 2024 16:00:53 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-responder/</guid><description>nmap scan
-unika.htb
-Which scripting language is being used on the server to generate webpages?
-PHP
-What is the name of the URL parameter which is used to load different language versions of the webpage?
-Ans: page
-Which of the following values for the page parameter would be an example of exploiting a Local File Include (LFI) vulnerability: &amp;ldquo;french.html&amp;rdquo;, &amp;ldquo;//10.10.14.6/somefile&amp;rdquo;, &amp;ldquo;../../../../../../../../windows/system32/drivers/etc/hosts&amp;rdquo;, &amp;ldquo;minikatz.exe&amp;rdquo;
-url : http://unika.htb/index.php?page=/../../../../../../../windows/system32/drivers/etc/hosts
-Which of the following values for the page parameter would be an example of exploiting a Remote File Include (RFI) vulnerability: &amp;ldquo;french.</description></item><item><title>Crocodile</title><link>https://example.org/hackthebox/starting-point/tier1/htb-crocodile/</link><pubDate>Fri, 19 Jul 2024 15:55:23 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-crocodile/</guid><description>What Nmap scanning switch employs the use of default scripts during a scan? Ans: -sC
-What service version is found to be running on port 21? Ans: vsftpd 3.0.3
-What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message? Ans: 230
-After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously? Ans: anonymous
-After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?</description></item><item><title>Appointment</title><link>https://example.org/hackthebox/starting-point/tier1/htb-appointment/</link><pubDate>Fri, 19 Jul 2024 15:49:30 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-appointment/</guid><description>TASK 1
-What does the acronym SQL stand for?
-Ans: Structured Query language
-TASK 2
-What is one of the most common type of SQL vulnerabilities? Ans: SQL Injection
-TASK 3
-What is the 2021 OWASP Top 10 classification for this vulnerability? searching on google will give us the answer ANS: A03:2021-Injection
-What does Nmap report as the service and version that are running on port 80 of the target?</description></item><item><title>Meow</title><link>https://example.org/hackthebox/starting-point/tier0/htb-meow/</link><pubDate>Fri, 19 Jul 2024 15:45:10 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-meow/</guid><description>What does the acronym VM stand for?
-Virtual machine
-What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It&amp;rsquo;s also known as a console or shell.
-Terminal
-What service do we use to form our VPN connection into HTB labs? Openvpn
-What tool do we use to test our connection to the target with an ICMP echo request?</description></item><item><title>Fawn</title><link>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</link><pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-fawn/</guid><description>we got the ftp files now we got the flag
-TASK 1
-What does the 3-letter acronym FTP stand for?
-file transfer protocol
-Which port does the FTP service listen on usually?
-port 21
-What acronym is used for the secure version of FTP?
-SFTP
-What is the command we can use to send an ICMP echo request to test our connection to the target?
-Ping
-From your scans, what version is FTP running on the target?</description></item><item><title>Dancing</title><link>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</link><pubDate>Fri, 19 Jul 2024 15:37:07 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</guid><description>What does the 3-letter acronym SMB stand for?
-****** ******* ****k
-What port does SMB use to operate at?
-445
-What is the service name for port 445 that came up in our Nmap scan? microsoft-ds
-What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we can use with the smbclient utility to &amp;rsquo;list&amp;rsquo; the available shares on Dancing?
--L
-How many shares are there on Dancing?
-4
-What is the name of the share we are able to access in the end with a blank password?</description></item><item><title>Keeper</title><link>https://example.org/hackthebox/linux/htb-keeper/</link><pubDate>Fri, 19 Jul 2024 15:17:35 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-keeper/</guid><description>Starting with a nmap scan we have this result When we access the IP address on port 80 via a browser, we can see there is just one link which redirects to tickets.keeper.htb/rt. But in order to do that we need to add this IP to our /etc/hosts file
-10.129.122.221 tickets.keeper.htb
-10.129.122.221 keeper.htb
-i&amp;rsquo;ve ried some default passweords and dource code but it wasn&amp;rsquo;t helpful
-i&amp;rsquo;ve googled and searched in exploit db but found no exploit mentioned in the web page so i searched for default creds for Request tracker</description></item><item><title>Perfection</title><link>https://example.org/hackthebox/linux/htb-perfection/</link><pubDate>Fri, 19 Jul 2024 14:39:25 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-perfection/</guid><description>Startign with nmap
-the website dashboard
-checked the wappalyzer to find the technologies website is using but couldn&amp;rsquo;t find any I tried directory fuzzing
-Found this at the bottom of the website we got another info that susan is sysadmin
-we can see this in the about us and there might me a vulnerability on secure coding there is a input field in the website , there might be a input validation vulnerbility</description></item><item><title>Builder</title><link>https://example.org/hackthebox/linux/htb-builder/</link><pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-builder/</guid><description>I started with a Nmap scan to know things that are running on this machine
-from the above nmap scan we can see port 22 and 8080 is open in port 8080 jetty is running (jetty is a java web server or a servelet container) https://en.wikipedia.org/wiki/Jetty_(web_server)
-Here&amp;rsquo;s the jenikins dashboard and jenikins version is 2.441
-in the people tab we have a user called jennifer
-enkins is a Java application. The server is Jetty, a Java web server.</description></item><item><title>Academy</title><link>https://example.org/hackthebox/linux/htb-academy/</link><pubDate>Fri, 19 Jul 2024 14:09:37 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-academy/</guid><description>Starting with Nmap we won&amp;rsquo;t be able to connect to the website using only ip address so we can access the website after adiing the website in /etc/hosts
-The POST request to register a new user is interesting:
-While the uid (user id) and double password fields are expected, roleid is interesting. I’ll register again, but this time I’ll use Burp proxy to intercept the POST and change roleid to 1.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HackTheBoxes on my Blog site</title>
+    <link>http://localhost:1313/hackthebox/</link>
+    <description>Recent content in HackTheBoxes on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 16:11:07 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/hackthebox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crafty</title>
+      <link>http://localhost:1313/hackthebox/windows/htb-crafty/</link>
+      <pubDate>Fri, 19 Jul 2024 16:11:07 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/windows/htb-crafty/</guid>
+      <description>machine IP : 10.10.11.249 startign with the nmap scan let&amp;rsquo;s do another namp scan with all ports to see if we can get any info&#xA;we&amp;rsquo;ve found that 25565 port is open let&amp;rsquo;s focus on gathering more info&#xA;add the ip to /etc/hosts to access the ip the above result is the result of wappalyzer extension for the website let&amp;rsquo;s explore the website&#xA;website dashboard every option we click is being redirected to comming soon webpage we&amp;rsquo;ve have dound another subdomain play.</description>
+    </item>
+    <item>
+      <title>Sequel</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier1/htb-sequel/</link>
+      <pubDate>Fri, 19 Jul 2024 16:05:20 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier1/htb-sequel/</guid>
+      <description>TASK 1&#xA;During our scan, which port do we find serving MySQL?&#xA;on port 3306 mysql is running&#xA;TASK 2&#xA;What community-developed MySQL version is the target running? Ans: Maria DB&#xA;TASK 3&#xA;When using the MySQL command line client, what switch do we need to use in order to specify a login username?&#xA;using the mysql manual page now we know that -h is used to connect to a host and -u used to specify the username</description>
+    </item>
+    <item>
+      <title>Responder</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier1/htb-responder/</link>
+      <pubDate>Fri, 19 Jul 2024 16:00:53 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier1/htb-responder/</guid>
+      <description>nmap scan&#xA;unika.htb&#xA;Which scripting language is being used on the server to generate webpages?&#xA;PHP&#xA;What is the name of the URL parameter which is used to load different language versions of the webpage?&#xA;Ans: page&#xA;Which of the following values for the page parameter would be an example of exploiting a Local File Include (LFI) vulnerability: &amp;ldquo;french.html&amp;rdquo;, &amp;ldquo;//10.10.14.6/somefile&amp;rdquo;, &amp;ldquo;../../../../../../../../windows/system32/drivers/etc/hosts&amp;rdquo;, &amp;ldquo;minikatz.exe&amp;rdquo;&#xA;url : http://unika.htb/index.php?page=/../../../../../../../windows/system32/drivers/etc/hosts&#xA;Which of the following values for the page parameter would be an example of exploiting a Remote File Include (RFI) vulnerability: &amp;ldquo;french.</description>
+    </item>
+    <item>
+      <title>Crocodile</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier1/htb-crocodile/</link>
+      <pubDate>Fri, 19 Jul 2024 15:55:23 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier1/htb-crocodile/</guid>
+      <description>What Nmap scanning switch employs the use of default scripts during a scan? Ans: -sC&#xA;What service version is found to be running on port 21? Ans: vsftpd 3.0.3&#xA;What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message? Ans: 230&#xA;After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously? Ans: anonymous&#xA;After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?</description>
+    </item>
+    <item>
+      <title>Appointment</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier1/htb-appointment/</link>
+      <pubDate>Fri, 19 Jul 2024 15:49:30 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier1/htb-appointment/</guid>
+      <description>TASK 1&#xA;What does the acronym SQL stand for?&#xA;Ans: Structured Query language&#xA;TASK 2&#xA;What is one of the most common type of SQL vulnerabilities? Ans: SQL Injection&#xA;TASK 3&#xA;What is the 2021 OWASP Top 10 classification for this vulnerability? searching on google will give us the answer ANS: A03:2021-Injection&#xA;What does Nmap report as the service and version that are running on port 80 of the target?</description>
+    </item>
+    <item>
+      <title>Meow</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier0/htb-meow/</link>
+      <pubDate>Fri, 19 Jul 2024 15:45:10 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier0/htb-meow/</guid>
+      <description>What does the acronym VM stand for?&#xA;Virtual machine&#xA;What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It&amp;rsquo;s also known as a console or shell.&#xA;Terminal&#xA;What service do we use to form our VPN connection into HTB labs? Openvpn&#xA;What tool do we use to test our connection to the target with an ICMP echo request?</description>
+    </item>
+    <item>
+      <title>Fawn</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier0/htb-fawn/</link>
+      <pubDate>Fri, 19 Jul 2024 15:42:52 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier0/htb-fawn/</guid>
+      <description>we got the ftp files&#xA;now we got the flag&#xA;TASK 1&#xA;What does the 3-letter acronym FTP stand for?&#xA;file transfer protocol&#xA;Which port does the FTP service listen on usually?&#xA;port 21&#xA;What acronym is used for the secure version of FTP?&#xA;SFTP&#xA;What is the command we can use to send an ICMP echo request to test our connection to the target?&#xA;Ping&#xA;From your scans, what version is FTP running on the target?</description>
+    </item>
+    <item>
+      <title>Dancing</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier0/htb-dancing/</link>
+      <pubDate>Fri, 19 Jul 2024 15:37:07 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier0/htb-dancing/</guid>
+      <description>What does the 3-letter acronym SMB stand for?&#xA;****** ******* ****k&#xA;What port does SMB use to operate at?&#xA;445&#xA;What is the service name for port 445 that came up in our Nmap scan? microsoft-ds&#xA;What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we can use with the smbclient utility to &amp;rsquo;list&amp;rsquo; the available shares on Dancing?&#xA;-L&#xA;How many shares are there on Dancing?&#xA;4&#xA;What is the name of the share we are able to access in the end with a blank password?</description>
+    </item>
+    <item>
+      <title>Keeper</title>
+      <link>http://localhost:1313/hackthebox/linux/htb-keeper/</link>
+      <pubDate>Fri, 19 Jul 2024 15:17:35 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/linux/htb-keeper/</guid>
+      <description>Starting with a nmap scan we have this result&#xA;When we access the IP address on port 80 via a browser, we can see there is just one link which redirects to tickets.keeper.htb/rt. But in order to do that we need to add this IP to our /etc/hosts file&#xA;10.129.122.221 tickets.keeper.htb&#xA;10.129.122.221 keeper.htb&#xA;i&amp;rsquo;ve ried some default passweords and dource code but it wasn&amp;rsquo;t helpful&#xA;i&amp;rsquo;ve googled and searched in exploit db but found no exploit mentioned in the web page</description>
+    </item>
+    <item>
+      <title>Perfection</title>
+      <link>http://localhost:1313/hackthebox/linux/htb-perfection/</link>
+      <pubDate>Fri, 19 Jul 2024 14:39:25 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/linux/htb-perfection/</guid>
+      <description>Startign with nmap&#xA;the website dashboard&#xA;checked the wappalyzer to find the technologies website is using but couldn&amp;rsquo;t find any I tried directory fuzzing&#xA;Found this at the bottom of the website&#xA;we got another info that susan is sysadmin&#xA;we can see this in the about us and there might me a vulnerability on secure coding&#xA;there is a input field in the website , there might be a input validation vulnerbility</description>
+    </item>
+    <item>
+      <title>Builder</title>
+      <link>http://localhost:1313/hackthebox/linux/htb-builder/</link>
+      <pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/linux/htb-builder/</guid>
+      <description>I started with a Nmap scan to know things that are running on this machine&#xA;from the above nmap scan we can see port 22 and 8080 is open in port 8080 jetty is running (jetty is a java web server or a servelet container) https://en.wikipedia.org/wiki/Jetty_(web_server)&#xA;Here&amp;rsquo;s the jenikins dashboard and jenikins version is 2.441&#xA;in the people tab we have a user called jennifer&#xA;enkins is a Java application. The server is Jetty, a Java web server.</description>
+    </item>
+    <item>
+      <title>Academy</title>
+      <link>http://localhost:1313/hackthebox/linux/htb-academy/</link>
+      <pubDate>Fri, 19 Jul 2024 14:09:37 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/linux/htb-academy/</guid>
+      <description>Starting with Nmap&#xA;we won&amp;rsquo;t be able to connect to the website using only ip address so we can access the website after adiing the website in /etc/hosts&#xA;The POST request to register a new user is interesting:&#xA;While the uid (user id) and double password fields are expected, roleid is interesting. I’ll register again, but this time I’ll use Burp proxy to intercept the POST and change roleid to 1.</description>
+    </item>
+  </channel>
+</rss>

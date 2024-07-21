@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Simple Case on my Blog site</title><link>https://example.org/categories/simple-case/</link><description>Recent content in Simple Case on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 16:19:46 +0530</lastBuildDate><atom:link href="https://example.org/categories/simple-case/index.xml" rel="self" type="application/rss+xml"/><item><title>File Path Traversal Simple Case</title><link>https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/</link><pubDate>Fri, 19 Jul 2024 16:19:46 +0530</pubDate><guid>https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/</guid><description>Lab URL : https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/
-This lab objective is to read /etc/passwd file from the url )
-we can click on view item to get the more details about the product and if we look at the url :
-https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/product?productId=1but the parameter should be filename if we want to inject the payload so let&amp;rsquo;s open a image in new tab if we look at the url now :
-https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/image?filename=38.jpgsince we have a filename as a parameter we can use .</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simple Case on my Blog site</title>
+    <link>http://localhost:1313/categories/simple-case/</link>
+    <description>Recent content in Simple Case on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 16:19:46 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/simple-case/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Path Traversal Simple Case</title>
+      <link>http://localhost:1313/portswigger/server-side-vuln/portswigger-filepath-traversal/</link>
+      <pubDate>Fri, 19 Jul 2024 16:19:46 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/server-side-vuln/portswigger-filepath-traversal/</guid>
+      <description>Lab URL : https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/&#xA;This lab objective is to read /etc/passwd file from the url&#xA;we can click on view item to get the more details about the product and if we look at the url :&#xA;https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/product?productId=1&#xD;but the parameter should be filename if we want to inject the payload so let&amp;rsquo;s open a image in new tab&#xA;if we look at the url now :&#xA;https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/image?filename=38.jpg&#xD;since we have a filename as a parameter we can use .</description>
+    </item>
+  </channel>
+</rss>

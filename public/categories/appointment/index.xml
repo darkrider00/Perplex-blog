@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Appointment on my Blog site</title><link>https://example.org/categories/appointment/</link><description>Recent content in Appointment on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 15:49:30 +0530</lastBuildDate><atom:link href="https://example.org/categories/appointment/index.xml" rel="self" type="application/rss+xml"/><item><title>Appointment</title><link>https://example.org/hackthebox/starting-point/tier1/htb-appointment/</link><pubDate>Fri, 19 Jul 2024 15:49:30 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-appointment/</guid><description>TASK 1
-What does the acronym SQL stand for?
-Ans: Structured Query language
-TASK 2
-What is one of the most common type of SQL vulnerabilities? Ans: SQL Injection
-TASK 3
-What is the 2021 OWASP Top 10 classification for this vulnerability? searching on google will give us the answer ANS: A03:2021-Injection
-What does Nmap report as the service and version that are running on port 80 of the target?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Appointment on my Blog site</title>
+    <link>http://localhost:1313/categories/appointment/</link>
+    <description>Recent content in Appointment on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 15:49:30 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/appointment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Appointment</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier1/htb-appointment/</link>
+      <pubDate>Fri, 19 Jul 2024 15:49:30 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier1/htb-appointment/</guid>
+      <description>TASK 1&#xA;What does the acronym SQL stand for?&#xA;Ans: Structured Query language&#xA;TASK 2&#xA;What is one of the most common type of SQL vulnerabilities? Ans: SQL Injection&#xA;TASK 3&#xA;What is the 2021 OWASP Top 10 classification for this vulnerability? searching on google will give us the answer ANS: A03:2021-Injection&#xA;What does Nmap report as the service and version that are running on port 80 of the target?</description>
+    </item>
+  </channel>
+</rss>

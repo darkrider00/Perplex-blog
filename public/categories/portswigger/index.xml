@@ -1,26 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Portswigger on my Blog site</title><link>https://example.org/categories/portswigger/</link><description>Recent content in Portswigger on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 20 Jul 2024 12:34:30 +0530</lastBuildDate><atom:link href="https://example.org/categories/portswigger/index.xml" rel="self" type="application/rss+xml"/><item><title>Sql Injection Vulnerbility With Filter Bypass via XML Encoding</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/</link><pubDate>Sat, 20 Jul 2024 12:34:30 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/</guid><description>The above image is lab description from the above description
-we know that there is a database that contains username and password to solve the lab we have to retrieve the username and password and login to their account. Let&amp;rsquo;s take a look at the hint
-hint A web application firewall (WAF) will block requests that contain obvious signs of a SQL injection attack. You'll need to find a way to obfuscate your malicious query to bypass this filter.</description></item><item><title>Sql Injection Vulnerbility in Where Clause Allowing Retrieval of Hidden Data</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/</link><pubDate>Sat, 20 Jul 2024 12:31:38 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/</guid><description>in this description it&amp;rsquo;s saying that there is a SQL vuln in product category filter , to solve this lab we need to perform a SQL injection that causes application to display unreleases products
-this is the website dashboard since it&amp;rsquo;s mentioned that there is a vulnerability in product category let&amp;rsquo;s select the product category and capture the request in burp suite
-SELECT * FROM products WHERE category = &amp;lsquo;Gifts&amp;rsquo; AND released = 1</description></item><item><title>Sql Injection Vulnerbility Allowing Login Bypass</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/</link><pubDate>Sat, 20 Jul 2024 12:28:31 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/</guid><description>In this lab we need to by pass login as administrator to complete the lab We know our username is administrator
-The Website: Let&amp;rsquo;s go to login page and try some details and capture the request in burpsuite
-here we can see a post request captured in this burp let&amp;rsquo;s send this to repeater and play with some parameters
-from the request
-csrf=HsLJjSGkCiFEw8OYoi4IjOfa8mV2lQlv: - csrf stands for Cross-Site Request Forgery token.</description></item><item><title>Sql Injection Union Attack Determining the Number of Columns Returned by the Query</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-union-attack/</link><pubDate>Sat, 20 Jul 2024 12:19:33 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-union-attack/</guid><description>from the lab description we know that there is SQL vulnerability in product category filter , to solve the lab we need to perform a union attack that determine number of columns
-let&amp;rsquo;s access the lab The website to display null values we need to use the payload &amp;lsquo;+UNION+SELECT+NULL&amp;ndash; if 1 column in ther if 2 colums are there then we need tp use 2 NULLs so on
-i&amp;rsquo;ve started with null value and i got internal server error let&amp;rsquo;s try 2 same result let&amp;rsquo;s go for three</description></item><item><title>Sql Injection Querying Oracle</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-oracle/</link><pubDate>Fri, 19 Jul 2024 16:42:59 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-oracle/</guid><description>From the lab description we know that there is SQL vulnerability in product category and to solve this lab we need to display database version string
-And this is a ORACLE database
-Refer to SQL cheatsheet here
-https://portswigger.net/web-security/sql-injection/cheat-sheet
-TO retrieve the database version and contents these are the payloads available here
-Now let&amp;rsquo;s access the website From the website if we select the different categories mentioned here by selecting different categories the website is refining our search</description></item><item><title>Sql Injection Querying</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/</link><pubDate>Fri, 19 Jul 2024 16:38:06 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/</guid><description>From the lab description we know that There is SQL vulnerability in product category filter. To solve the lab we need to display the database version string
-Here the database is My SQL , Let&amp;rsquo;s head over to SQL cheat sheet for payloads refer to sql sheet for here
-here are the available list of payloads we can use for different types of databases
-Let&amp;rsquo;s access the lab the same thing we have here it will refine your search based on the category you select for detail walkthrough refer to SQL injection attack, querying the database type and version on Oracle</description></item><item><title>Sql Injection Listing Databse Contents</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/</link><pubDate>Fri, 19 Jul 2024 16:33:29 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/</guid><description>From the LAB description there is a SQL Vulnerability in the product category filter and to complete this lab we need to log in as administrator
-this lab contains oracle database refer to SQL CHEAT SHEET for payloads
-HINT: On Oracle databases, every SELECT statement must specify a table to select FROM. If your UNION SELECT attack does not query from a table, you will still need to include the FROM keyword followed by a valid table name.</description></item><item><title>Sql Injection</title><link>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing/</link><pubDate>Fri, 19 Jul 2024 16:26:59 +0530</pubDate><guid>https://example.org/portswigger/sql-injection/portswigger-sql-database-listing/</guid><description>From the lab description This lab contains SQL injection Vulnerability in Product category filter to solve this lab we need to login as administrator this lab contains non oracle databases
-refer to SQL CHEAT SHEET for payloads Let&amp;rsquo;s access the lab like as usual we&amp;rsquo;ve intercepted the request and sent it to repeater now let&amp;rsquo;s check number of columns and determine the data type of those columns to perform a union attack</description></item><item><title>File Path Traversal Simple Case</title><link>https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/</link><pubDate>Fri, 19 Jul 2024 16:19:46 +0530</pubDate><guid>https://example.org/portswigger/server-side-vuln/portswigger-filepath-traversal/</guid><description>Lab URL : https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/
-This lab objective is to read /etc/passwd file from the url )
-we can click on view item to get the more details about the product and if we look at the url :
-https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/product?productId=1but the parameter should be filename if we want to inject the payload so let&amp;rsquo;s open a image in new tab if we look at the url now :
-https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/image?filename=38.jpgsince we have a filename as a parameter we can use .</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portswigger on my Blog site</title>
+    <link>http://localhost:1313/categories/portswigger/</link>
+    <description>Recent content in Portswigger on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jul 2024 12:34:30 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/portswigger/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sql Injection Vulnerbility With Filter Bypass via XML Encoding</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/</link>
+      <pubDate>Sat, 20 Jul 2024 12:34:30 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-bypass-xml-encoding/</guid>
+      <description>The above image is lab description from the above description&#xA;we know that there is a database that contains username and password to solve the lab we have to retrieve the username and password and login to their account. Let&amp;rsquo;s take a look at the hint&#xA;hint A web application firewall (WAF) will block requests that contain obvious signs of a SQL injection attack. You&#39;ll need to find a way to obfuscate your malicious query to bypass this filter.</description>
+    </item>
+    <item>
+      <title>Sql Injection Vulnerbility in Where Clause Allowing Retrieval of Hidden Data</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/</link>
+      <pubDate>Sat, 20 Jul 2024 12:31:38 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-where-clause/</guid>
+      <description>in this description it&amp;rsquo;s saying that there is a SQL vuln in product category filter , to solve this lab we need to perform a SQL injection that causes application to display unreleases products&#xA;this is the website dashboard since it&amp;rsquo;s mentioned that there is a vulnerability in product category let&amp;rsquo;s select the product category and capture the request in burp suite&#xA;SELECT * FROM products WHERE category = &amp;lsquo;Gifts&amp;rsquo; AND released = 1</description>
+    </item>
+    <item>
+      <title>Sql Injection Vulnerbility Allowing Login Bypass</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/</link>
+      <pubDate>Sat, 20 Jul 2024 12:28:31 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-injection-vulnerbility-allowing-login-bypass/</guid>
+      <description>In this lab we need to by pass login as administrator to complete the lab We know our username is administrator&#xA;The Website:&#xA;Let&amp;rsquo;s go to login page and try some details and capture the request in burpsuite&#xA;here we can see a post request captured in this burp let&amp;rsquo;s send this to repeater and play with some parameters&#xA;from the request&#xA;csrf=HsLJjSGkCiFEw8OYoi4IjOfa8mV2lQlv: - csrf stands for Cross-Site Request Forgery token.</description>
+    </item>
+    <item>
+      <title>Sql Injection Union Attack Determining the Number of Columns Returned by the Query</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-union-attack/</link>
+      <pubDate>Sat, 20 Jul 2024 12:19:33 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-union-attack/</guid>
+      <description>from the lab description we know that there is SQL vulnerability in product category filter , to solve the lab we need to perform a union attack that determine number of columns&#xA;let&amp;rsquo;s access the lab The website&#xA;to display null values we need to use the payload &amp;lsquo;+UNION+SELECT+NULL&amp;ndash; if 1 column in ther if 2 colums are there then we need tp use 2 NULLs so on&#xA;i&amp;rsquo;ve started with null value and i got internal server error let&amp;rsquo;s try 2</description>
+    </item>
+    <item>
+      <title>Sql Injection Querying Oracle</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-querying-oracle/</link>
+      <pubDate>Fri, 19 Jul 2024 16:42:59 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-querying-oracle/</guid>
+      <description>From the lab description we know that there is SQL vulnerability in product category and to solve this lab we need to display database version string&#xA;And this is a ORACLE database&#xA;Refer to SQL cheatsheet here&#xA;https://portswigger.net/web-security/sql-injection/cheat-sheet&#xA;TO retrieve the database version and contents these are the payloads available here&#xA;Now let&amp;rsquo;s access the website&#xA;From the website if we select the different categories mentioned here by selecting different categories the website is refining our search</description>
+    </item>
+    <item>
+      <title>Sql Injection Querying</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/</link>
+      <pubDate>Fri, 19 Jul 2024 16:38:06 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-querying-non-oracle/</guid>
+      <description>From the lab description we know that There is SQL vulnerability in product category filter. To solve the lab we need to display the database version string&#xA;Here the database is My SQL , Let&amp;rsquo;s head over to SQL cheat sheet for payloads refer to sql sheet for here&#xA;here are the available list of payloads we can use for different types of databases&#xA;Let&amp;rsquo;s access the lab&#xA;the same thing we have here it will refine your search based on the category you select for detail walkthrough refer to</description>
+    </item>
+    <item>
+      <title>Sql Injection Listing Databse Contents</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/</link>
+      <pubDate>Fri, 19 Jul 2024 16:33:29 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-listing-oracle-databse/</guid>
+      <description>From the LAB description there is a SQL Vulnerability in the product category filter and to complete this lab we need to log in as administrator&#xA;this lab contains oracle database refer to SQL CHEAT SHEET for payloads&#xA;HINT: On Oracle databases, every SELECT statement must specify a table to select FROM. If your UNION SELECT attack does not query from a table, you will still need to include the FROM keyword followed by a valid table name.</description>
+    </item>
+    <item>
+      <title>Sql Injection</title>
+      <link>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-listing/</link>
+      <pubDate>Fri, 19 Jul 2024 16:26:59 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/sql-injection/portswigger-sql-database-listing/</guid>
+      <description>From the lab description This lab contains SQL injection Vulnerability in Product category filter to solve this lab we need to login as administrator this lab contains non oracle databases&#xA;refer to SQL CHEAT SHEET for payloads Let&amp;rsquo;s access the lab like as usual we&amp;rsquo;ve intercepted the request and sent it to repeater now let&amp;rsquo;s check number of columns and determine the data type of those columns to perform a union attack</description>
+    </item>
+    <item>
+      <title>File Path Traversal Simple Case</title>
+      <link>http://localhost:1313/portswigger/server-side-vuln/portswigger-filepath-traversal/</link>
+      <pubDate>Fri, 19 Jul 2024 16:19:46 +0530</pubDate>
+      <guid>http://localhost:1313/portswigger/server-side-vuln/portswigger-filepath-traversal/</guid>
+      <description>Lab URL : https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/&#xA;This lab objective is to read /etc/passwd file from the url&#xA;we can click on view item to get the more details about the product and if we look at the url :&#xA;https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/product?productId=1&#xD;but the parameter should be filename if we want to inject the payload so let&amp;rsquo;s open a image in new tab&#xA;if we look at the url now :&#xA;https://0ac7003b03b289fd80483a4d00050045.web-security-academy.net/image?filename=38.jpg&#xD;since we have a filename as a parameter we can use .</description>
+    </item>
+  </channel>
+</rss>

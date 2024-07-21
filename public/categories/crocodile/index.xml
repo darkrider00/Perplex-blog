@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Crocodile on my Blog site</title><link>https://example.org/categories/crocodile/</link><description>Recent content in Crocodile on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 15:55:23 +0530</lastBuildDate><atom:link href="https://example.org/categories/crocodile/index.xml" rel="self" type="application/rss+xml"/><item><title>Crocodile</title><link>https://example.org/hackthebox/starting-point/tier1/htb-crocodile/</link><pubDate>Fri, 19 Jul 2024 15:55:23 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier1/htb-crocodile/</guid><description>What Nmap scanning switch employs the use of default scripts during a scan? Ans: -sC
-What service version is found to be running on port 21? Ans: vsftpd 3.0.3
-What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message? Ans: 230
-After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously? Ans: anonymous
-After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crocodile on my Blog site</title>
+    <link>http://localhost:1313/categories/crocodile/</link>
+    <description>Recent content in Crocodile on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 15:55:23 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/crocodile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crocodile</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier1/htb-crocodile/</link>
+      <pubDate>Fri, 19 Jul 2024 15:55:23 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier1/htb-crocodile/</guid>
+      <description>What Nmap scanning switch employs the use of default scripts during a scan? Ans: -sC&#xA;What service version is found to be running on port 21? Ans: vsftpd 3.0.3&#xA;What FTP code is returned to us for the &amp;ldquo;Anonymous FTP login allowed&amp;rdquo; message? Ans: 230&#xA;After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously? Ans: anonymous&#xA;After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?</description>
+    </item>
+  </channel>
+</rss>

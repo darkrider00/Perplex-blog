@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Builder on my Blog site</title><link>https://example.org/categories/builder/</link><description>Recent content in Builder on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 14:25:40 +0530</lastBuildDate><atom:link href="https://example.org/categories/builder/index.xml" rel="self" type="application/rss+xml"/><item><title>Builder</title><link>https://example.org/hackthebox/linux/htb-builder/</link><pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate><guid>https://example.org/hackthebox/linux/htb-builder/</guid><description>I started with a Nmap scan to know things that are running on this machine
-from the above nmap scan we can see port 22 and 8080 is open in port 8080 jetty is running (jetty is a java web server or a servelet container) https://en.wikipedia.org/wiki/Jetty_(web_server)
-Here&amp;rsquo;s the jenikins dashboard and jenikins version is 2.441
-in the people tab we have a user called jennifer
-enkins is a Java application. The server is Jetty, a Java web server.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Builder on my Blog site</title>
+    <link>http://localhost:1313/categories/builder/</link>
+    <description>Recent content in Builder on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 14:25:40 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/builder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Builder</title>
+      <link>http://localhost:1313/hackthebox/linux/htb-builder/</link>
+      <pubDate>Fri, 19 Jul 2024 14:25:40 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/linux/htb-builder/</guid>
+      <description>I started with a Nmap scan to know things that are running on this machine&#xA;from the above nmap scan we can see port 22 and 8080 is open in port 8080 jetty is running (jetty is a java web server or a servelet container) https://en.wikipedia.org/wiki/Jetty_(web_server)&#xA;Here&amp;rsquo;s the jenikins dashboard and jenikins version is 2.441&#xA;in the people tab we have a user called jennifer&#xA;enkins is a Java application. The server is Jetty, a Java web server.</description>
+    </item>
+  </channel>
+</rss>

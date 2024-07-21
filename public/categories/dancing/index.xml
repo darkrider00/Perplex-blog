@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dancing on my Blog site</title><link>https://example.org/categories/dancing/</link><description>Recent content in Dancing on my Blog site</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2024 15:37:07 +0530</lastBuildDate><atom:link href="https://example.org/categories/dancing/index.xml" rel="self" type="application/rss+xml"/><item><title>Dancing</title><link>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</link><pubDate>Fri, 19 Jul 2024 15:37:07 +0530</pubDate><guid>https://example.org/hackthebox/starting-point/tier0/htb-dancing/</guid><description>What does the 3-letter acronym SMB stand for?
-****** ******* ****k
-What port does SMB use to operate at?
-445
-What is the service name for port 445 that came up in our Nmap scan? microsoft-ds
-What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we can use with the smbclient utility to &amp;rsquo;list&amp;rsquo; the available shares on Dancing?
--L
-How many shares are there on Dancing?
-4
-What is the name of the share we are able to access in the end with a blank password?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dancing on my Blog site</title>
+    <link>http://localhost:1313/categories/dancing/</link>
+    <description>Recent content in Dancing on my Blog site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 15:37:07 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/dancing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dancing</title>
+      <link>http://localhost:1313/hackthebox/starting-point/tier0/htb-dancing/</link>
+      <pubDate>Fri, 19 Jul 2024 15:37:07 +0530</pubDate>
+      <guid>http://localhost:1313/hackthebox/starting-point/tier0/htb-dancing/</guid>
+      <description>What does the 3-letter acronym SMB stand for?&#xA;****** ******* ****k&#xA;What port does SMB use to operate at?&#xA;445&#xA;What is the service name for port 445 that came up in our Nmap scan? microsoft-ds&#xA;What is the &amp;lsquo;flag&amp;rsquo; or &amp;lsquo;switch&amp;rsquo; that we can use with the smbclient utility to &amp;rsquo;list&amp;rsquo; the available shares on Dancing?&#xA;-L&#xA;How many shares are there on Dancing?&#xA;4&#xA;What is the name of the share we are able to access in the end with a blank password?</description>
+    </item>
+  </channel>
+</rss>
