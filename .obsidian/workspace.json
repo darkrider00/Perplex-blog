@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/HackTheBox/Linux/Academy.md",
+                "file": "content/Installation and setup/Upgrading To Windows 10.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/HackTheBox/Linux/Academy.md",
+                "file": "content/Installation and setup/Upgrading To Windows 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/HackTheBox/Linux/Academy.md",
+                "file": "content/Installation and setup/Upgrading To Windows 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/HackTheBox/Linux/Academy.md"
+                "file": "content/Installation and setup/Upgrading To Windows 10.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54638a68b03e8925",
+  "active": "fdf6b7a98cf8b619",
   "lastOpenFiles": [
+    "content/HackTheBox/Windows/crafty.md",
+    "content/Installation and setup/Upgrading To Windows 10.md",
+    "content/HackTheBox/Linux/Academy.md",
     "content/Installation and setup"
   ]
 }
